@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920">
+  <title>CanutilloTV</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Solo existe en la tele; en el navegador falla y se usa <video>. -->
+  <script src="$WEBAPIS/webapis/webapis.js"></script>
+</head>
+<body data-screen="list">
+  <object id="av-player" type="application/avplayer"></object>
+
+  <main id="guide">
+    <header class="masthead">
+      <h1 class="brand">canutillo<span>tv</span></h1>
+      <p id="status" class="status"></p>
+      <time id="clock" class="clock"></time>
+    </header>
+
+    <nav class="groups-col">
+      <ul id="groups" class="groups"></ul>
+    </nav>
+
+    <section class="channels-col">
+      <ul id="channels" class="channels"></ul>
+      <p id="channels-empty" class="empty"></p>
+    </section>
+
+    <aside id="preview" class="preview">
+      <div class="preview-logo"><img id="preview-logo" alt=""></div>
+      <p id="preview-num" class="preview-num"></p>
+      <h2 id="preview-name" class="preview-name"></h2>
+      <p id="preview-meta" class="preview-meta"></p>
+    </aside>
+
+    <footer class="legend">
+      <span><i class="k red"></i>Favorito</span>
+      <span><i class="k green"></i>Otra fuente</span>
+      <span><i class="k yellow"></i>Listas</span>
+      <span><i class="k blue"></i>YouTube</span>
+      <span class="hint">0–9 marcar canal</span>
+    </footer>
+  </main>
+
+  <div id="osd" class="osd">
+    <div class="osd-num" id="osd-num"></div>
+    <div class="osd-body">
+      <div class="osd-title">
+        <img id="osd-logo" alt="">
+        <span id="osd-name"></span>
+      </div>
+      <div class="osd-sub">
+        <span id="osd-group"></span>
+        <span id="osd-msg" class="osd-msg"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="digits" class="digits"></div>
+  <div id="toast" class="toast"></div>
+
+  <section id="settings" class="settings">
+    <div class="settings-main">
+      <p class="eyebrow">Listas de canales</p>
+      <h2>Tus listas</h2>
+      <ul id="lists" class="lists"></ul>
+      <input id="list-url" type="url" spellcheck="false" autocomplete="off" autocapitalize="off"
+             placeholder="https://… (pulsa OK para escribir)">
+      <footer class="legend">
+        <span><i class="k enter"></i>Activar / desactivar</span>
+        <span><i class="k red"></i>Quitar</span>
+        <span><i class="k blue"></i>Por defecto</span>
+        <span><i class="k back"></i>Atrás</span>
+      </footer>
+    </div>
+
+    <aside class="qr-card">
+      <div id="qr" class="qr"></div>
+      <p class="qr-title">Añade una lista desde el móvil</p>
+      <p id="qr-url" class="qr-url"></p>
+      <p class="qr-note">Abre el enlace, pega la URL de la lista y envíala.</p>
+    </aside>
+  </section>
+
+  <script src="vendor/qrcode.js"></script>
+  <script src="js/urls.js"></script>
+  <script src="js/m3u.js"></script>
+  <script src="js/lists.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/remote.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

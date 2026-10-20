@@ -1,0 +1,14 @@
+{
+  "name": "canutillotv-app",
+  "version": "1.0.8",
+  "description": "Canales de listas IPTV públicas en una sola guía, para Samsung Tizen.",
+  "packageType": "app",
+  "appName": "CanutilloTV",
+  "appPath": "index.html",
+  "serviceFile": "service.js",
+  "keys": [
+    "ChannelUp", "ChannelDown", "ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue", "Info",
+    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
+  ],
+  "license": "UNLICENSED"
+}

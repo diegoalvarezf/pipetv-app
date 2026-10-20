@@ -1,0 +1,550 @@
+/*
+ * CanutilloTV — estilo de guía de televisión.
+ * Diseñado a 1920x1080. Solo se animan transform y opacity: la tele es modesta.
+ */
+
+:root {
+  --bg: #12100e;
+  --bg-raise: #1c1916;
+  --bg-focus: #2b2620;
+  --line: #2e2924;
+  --ink: #ede6da;
+  --ink-soft: #a89f92;
+  --ink-faint: #6b635a;
+  --accent: #f0a238;        /* ámbar de piloto "en el aire" */
+  --accent-ink: #1a1208;
+  --live: #e5483b;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --font: "SamsungOne", "Samsung Sans", "TizenSans", -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 30px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * AVPlay pinta el vídeo en un plano POR DEBAJO de la página: html, body y el
+ * propio <object> tienen que ser transparentes o el vídeo queda tapado
+ * (se oye pero no se ve). El fondo oscuro lo pone body solo sin vídeo.
+ */
+body { background: var(--bg); }
+body.playing { background: transparent; }
+
+ul { list-style: none; }
+
+#av-player {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+}
+#html-player {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background: #000;
+  object-fit: contain;
+}
+
+/* ---------- Guía ---------- */
+
+#guide {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 330px 820px 1fr;
+  grid-template-rows: 130px 1fr 96px;
+  grid-template-areas:
+    "head head head"
+    "groups channels preview"
+    "legend legend legend";
+  padding: 0 72px;
+  background: var(--bg);
+  transition: opacity .25s var(--ease), transform .35s var(--ease);
+}
+
+body.playing #guide {
+  background: linear-gradient(90deg, rgba(18, 16, 14, .97) 0%, rgba(18, 16, 14, .97) 62%, rgba(18, 16, 14, .78) 100%);
+}
+
+body[data-screen="watch"] #guide,
+body[data-screen="settings"] #guide {
+  opacity: 0;
+  transform: translateX(-40px);
+  pointer-events: none;
+}
+
+.masthead {
+  grid-area: head;
+  display: flex;
+  align-items: baseline;
+  padding-top: 56px;
+  border-bottom: 2px solid var(--line);
+}
+
+.brand {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+}
+.brand span {
+  color: var(--accent);
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.status {
+  flex: 1;
+  margin-left: 40px;
+  color: var(--ink-faint);
+  font-size: 24px;
+}
+
+.clock {
+  font-size: 34px;
+  font-weight: 300;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+}
+
+/* Grupos: texto plano, sin cajas */
+.groups-col {
+  grid-area: groups;
+  position: relative;
+  overflow: hidden;
+  padding-top: 36px;
+}
+.groups, .channels {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.groups .item, .channels .item {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.groups .item {
+  height: 56px;
+  line-height: 56px;
+  padding-left: 26px;
+  font-size: 27px;
+  color: var(--ink-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color .15s, transform .2s var(--ease);
+}
+.groups .item.selected { color: var(--ink); }
+.groups .item.selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.groups .item.focused {
+  color: var(--accent);
+  transform: translateX(8px);
+}
+
+/* La columna sin foco se apaga un poco */
+.groups-col, .channels-col { transition: opacity .2s; }
+body.col-channels .groups-col { opacity: .55; }
+body.col-groups .channels-col { opacity: .45; }
+
+/* Canales */
+.channels-col {
+  grid-area: channels;
+  position: relative;
+  overflow: hidden;
+  padding: 24px 40px 0 0;
+  border-right: 2px solid var(--line);
+}
+
+.channel {
+  display: flex;
+  align-items: center;
+  height: 92px;
+  padding: 0 24px;
+  border-radius: 4px;
+  transition: background-color .12s;
+}
+.channel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
+  width: 6px;
+  border-radius: 3px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transition: transform .18s var(--ease);
+}
+.channel.focused { background: var(--bg-focus); }
+.channel.focused::before { transform: scaleY(1); }
+
+.channel .num {
+  width: 86px;
+  font-size: 30px;
+  font-weight: 300;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-faint);
+}
+.channel.focused .num { color: var(--accent); font-weight: 600; }
+
+.channel .logo {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  margin-right: 26px;
+  border-radius: 6px;
+  background: var(--bg-raise);
+  overflow: hidden;
+}
+.channel .logo img {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  object-fit: contain;
+}
+
+.channel .name {
+  flex: 1;
+  font-size: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--ink-soft);
+  transition: transform .18s var(--ease), color .12s;
+}
+.channel.focused .name { color: var(--ink); transform: translateX(6px); }
+
+.channel .fav { color: var(--accent); margin-left: 16px; font-size: 26px; }
+.channel .fav:empty, .channel .alt:empty { display: none; }
+.channel .alt {
+  margin-left: 16px;
+  font-size: 20px;
+  color: var(--ink-faint);
+  letter-spacing: .02em;
+}
+.channel.playing .name::after {
+  content: "EN EMISIÓN";
+  margin-left: 18px;
+  padding: 3px 9px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: #fff;
+  background: var(--live);
+  border-radius: 3px;
+  vertical-align: 4px;
+}
+
+.empty {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 40px;
+  padding: 40px 24px;
+  color: var(--ink-faint);
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+/* Vista previa del canal enfocado */
+.preview {
+  grid-area: preview;
+  padding: 70px 0 0 72px;
+}
+.preview-logo {
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-raise);
+}
+.preview-logo img { width: 100%; height: 100%; padding: 12px; object-fit: contain; }
+.preview-num {
+  margin-top: 46px;
+  font-size: 120px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -.04em;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+.preview-name {
+  margin-top: 18px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.01em;
+}
+.preview-meta {
+  margin-top: 18px;
+  font-size: 26px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.preview.swap .preview-num,
+.preview.swap .preview-name { animation: rise .25s var(--ease); }
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Leyenda de teclas de colores, como en cualquier mando */
+.legend {
+  grid-area: legend;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid var(--line);
+  font-size: 24px;
+  color: var(--ink-soft);
+}
+.legend > span + span { margin-left: 48px; }
+.legend .hint { margin-left: auto; color: var(--ink-faint); }
+.k {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  border-radius: 4px;
+  vertical-align: -3px;
+}
+.k.red { background: #d8393a; }
+.k.green { background: #3aa655; }
+.k.yellow { background: #e6c229; }
+.k.blue { background: #2f6fd6; }
+.k.enter { border: 3px solid var(--ink-soft); border-radius: 50%; }
+.k.back { border: 3px solid var(--ink-soft); border-width: 3px 0 0 3px; transform: rotate(-45deg); width: 16px; height: 16px; }
+
+/* ---------- Rótulo en pantalla (lower third) ---------- */
+
+.osd {
+  position: fixed;
+  left: 96px;
+  bottom: 84px;
+  display: flex;
+  align-items: stretch;
+  max-width: 1200px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .2s, transform .3s var(--ease);
+  pointer-events: none;
+}
+.osd::before {
+  /* oscurece la parte baja para que el rótulo se lea sobre cualquier imagen */
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 380px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+  z-index: -1;
+}
+.osd.show { opacity: 1; transform: none; }
+body:not([data-screen="watch"]) .osd { display: none; }
+
+.osd-num {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 64px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+.osd-body {
+  padding: 20px 36px 22px;
+  background: rgba(18, 16, 14, .94);
+}
+.osd-title {
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.osd-title img { margin-right: 20px; width: 56px; height: 56px; border-radius: 6px; object-fit: contain; }
+.osd-sub {
+  margin-top: 8px;
+  font-size: 26px;
+  color: var(--ink-soft);
+}
+.osd-msg:not(:empty)::before { content: "  ·  "; color: var(--ink-faint); }
+.osd-msg { color: var(--accent); }
+
+/* Número que se va marcando */
+.digits {
+  position: fixed;
+  top: 70px;
+  right: 96px;
+  padding: 10px 26px;
+  font-size: 96px;
+  font-weight: 200;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+  background: rgba(18, 16, 14, .9);
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity .12s;
+}
+.digits.show { opacity: 1; }
+
+.toast {
+  position: fixed;
+  top: 56px;
+  left: 50%;
+  max-width: 1100px;
+  padding: 18px 32px;
+  font-size: 26px;
+  background: var(--bg-focus);
+  border-left: 6px solid var(--accent);
+  border-radius: 4px;
+  opacity: 0;
+  transform: translate(-50%, -20px);
+  transition: opacity .2s, transform .3s var(--ease);
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- Ajustes ---------- */
+
+.settings {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 160px;
+  background: var(--bg);
+  opacity: 0;
+  transform: translateX(40px);
+  pointer-events: none;
+  transition: opacity .25s var(--ease), transform .35s var(--ease);
+}
+body[data-screen="settings"] .settings { opacity: 1; transform: none; pointer-events: auto; }
+
+.settings-main { flex: 1; padding-right: 100px; }
+.eyebrow {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.settings h2 {
+  margin-top: 18px;
+  font-size: 76px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  line-height: 1.05;
+}
+.lists { margin-top: 44px; }
+.list-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 22px;
+  border-radius: 4px;
+  font-size: 30px;
+  transition: background-color .12s;
+}
+.list-row::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 6px;
+  border-radius: 3px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transition: transform .18s var(--ease);
+}
+.list-row.focused { background: var(--bg-focus); }
+.list-row.focused::before { transform: scaleY(1); }
+.list-row .check {
+  width: 54px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.list-row .list-name { width: 300px; font-weight: 600; }
+.list-row .list-info { flex: 1; font-size: 24px; color: var(--ink-faint); }
+.list-row.off .list-name { color: var(--ink-faint); font-weight: 400; }
+.list-row.add .list-name { color: var(--ink-soft); font-weight: 400; }
+
+.settings input {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px 22px;
+  font: inherit;
+  font-size: 28px;
+  color: var(--ink);
+  background: none;
+  border: 0;
+  border-bottom: 2px solid var(--line);
+  border-radius: 0;
+  outline: none;
+  opacity: .35;
+  transition: border-color .15s, opacity .15s;
+}
+.settings.adding input { opacity: 1; }
+.settings.typing input { border-bottom-color: var(--accent); }
+.settings input::placeholder { color: var(--ink-faint); }
+.settings .legend { margin-top: 48px; height: auto; border-top: 0; }
+
+.qr-card {
+  flex: none;
+  width: 520px;
+  padding: 44px;
+  border-radius: 14px;
+  background: var(--ink);
+  color: #1a1612;
+  text-align: center;
+}
+.qr {
+  width: 360px;
+  height: 360px;
+  margin: 0 auto;
+}
+.qr svg { display: block; width: 100%; height: 100%; }
+.qr-title { margin-top: 34px; font-size: 32px; font-weight: 800; }
+.qr-url {
+  margin-top: 10px;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: #6a5a45;
+  word-break: break-all;
+}
+.qr-note { margin-top: 18px; font-size: 22px; color: #7c7062; line-height: 1.4; }
