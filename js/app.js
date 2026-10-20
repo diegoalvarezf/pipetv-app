@@ -179,6 +179,8 @@
       if (old && old !== DEFAULT_LIST) lists.push(Lists.makeList(old));
       store.remove('listUrl');
       store.set('lists', lists);
+    } else if (Lists.migrate(lists)) {
+      store.set('lists', lists);
     }
     return lists;
   }

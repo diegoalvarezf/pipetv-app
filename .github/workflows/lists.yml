@@ -1,0 +1,26 @@
+# Regenera cada día las listas limpias de PipeTV (lists/*.m3u).
+name: Listas
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/build-lists.js lists
+      - name: Guardar si han cambiado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lists
+          git diff --cached --quiet || (git commit -m "Listas $(date -u +%F)" && git push)

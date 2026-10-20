@@ -12,18 +12,40 @@
 (function (root) {
   'use strict';
 
-  var IPTV_ORG = 'https://iptv-org.github.io/iptv/';
+  // Listas limpias (español/inglés, sin canales caídos, adultos, religiosos ni
+  // teletienda) que genera a diario tools/build-lists.js en el repo público.
+  var CURATED = 'https://raw.githubusercontent.com/diegoalvarezf/pipetv-app/main/lists/';
 
   var DEFAULTS = [
     { name: 'TDT', url: 'https://www.tdtchannels.com/lists/tv.m3u8', groups: 'own' },
-    { name: 'Música', url: IPTV_ORG + 'categories/music.m3u', groups: 'single' },
-    { name: 'Noticias', url: IPTV_ORG + 'categories/news.m3u', groups: 'single' },
-    { name: 'Infantil', url: IPTV_ORG + 'categories/kids.m3u', groups: 'single' },
-    { name: 'Deportes', url: IPTV_ORG + 'categories/sports.m3u', groups: 'single' },
-    { name: 'Películas', url: IPTV_ORG + 'categories/movies.m3u', groups: 'single' },
-    { name: 'España', url: IPTV_ORG + 'countries/es.m3u', groups: 'single' },
-    { name: 'Free-TV', url: 'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8', groups: 'prefixed' }
+    { name: 'Música', url: CURATED + 'musica.m3u', groups: 'single' },
+    { name: 'Noticias', url: CURATED + 'noticias.m3u', groups: 'single' },
+    { name: 'Infantil', url: CURATED + 'infantil.m3u', groups: 'single' },
+    { name: 'Deportes', url: CURATED + 'deportes.m3u', groups: 'single' },
+    { name: 'Películas', url: CURATED + 'peliculas.m3u', groups: 'single' },
+    { name: 'España', url: CURATED + 'espana.m3u', groups: 'single' },
+    { name: 'Free-TV', url: CURATED + 'freetv.m3u', groups: 'prefixed' }
   ];
+
+  // Listas por defecto de versiones anteriores -> su sustituta limpia
+  var IPTV_ORG = 'https://iptv-org.github.io/iptv/';
+  var REPLACED = {};
+  REPLACED[IPTV_ORG + 'categories/music.m3u'] = CURATED + 'musica.m3u';
+  REPLACED[IPTV_ORG + 'categories/news.m3u'] = CURATED + 'noticias.m3u';
+  REPLACED[IPTV_ORG + 'categories/kids.m3u'] = CURATED + 'infantil.m3u';
+  REPLACED[IPTV_ORG + 'categories/sports.m3u'] = CURATED + 'deportes.m3u';
+  REPLACED[IPTV_ORG + 'categories/movies.m3u'] = CURATED + 'peliculas.m3u';
+  REPLACED[IPTV_ORG + 'countries/es.m3u'] = CURATED + 'espana.m3u';
+  REPLACED['https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8'] = CURATED + 'freetv.m3u';
+
+  // Actualiza listas guardadas: cambia las antiguas por defecto y conserva las añadidas a mano.
+  function migrate(lists) {
+    var changed = false;
+    lists.forEach(function (l) {
+      if (REPLACED[l.url]) { l.url = REPLACED[l.url]; changed = true; }
+    });
+    return changed;
+  }
 
   function defaults() {
     return DEFAULTS.map(function (l) {
@@ -101,7 +123,7 @@
     return { channels: channels, groups: groups };
   }
 
-  var Lists = { defaults: defaults, makeList: makeList, nameFromUrl: nameFromUrl, merge: merge };
+  var Lists = { defaults: defaults, makeList: makeList, nameFromUrl: nameFromUrl, merge: merge, migrate: migrate };
 
   if (typeof module !== 'undefined' && module.exports) module.exports = Lists;
   else root.Lists = Lists;
