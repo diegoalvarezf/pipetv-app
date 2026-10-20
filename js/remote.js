@@ -29,7 +29,7 @@
   function create(store) {
     var topic = store.get('remoteTopic', null);
     if (!topic) {
-      topic = 'canutillo-' + randomId(12);
+      topic = 'pipetv-' + randomId(12);
       store.set('remoteTopic', topic);
     }
 

@@ -1,5 +1,5 @@
 /*
- * CanutilloTV: interfaz y navegación con el mando.
+ * PipeTV: interfaz y navegación con el mando.
  *
  * Pantallas:
  *   list     -> columna de grupos + columna de canales
@@ -64,15 +64,15 @@
   var store = {
     get: function (k, def) {
       try {
-        var v = localStorage.getItem('canutillo.' + k);
+        var v = localStorage.getItem('pipetv.' + k);
         return v === null ? def : JSON.parse(v);
       } catch (e) { return def; }
     },
     set: function (k, v) {
-      try { localStorage.setItem('canutillo.' + k, JSON.stringify(v)); } catch (e) { /* lleno */ }
+      try { localStorage.setItem('pipetv.' + k, JSON.stringify(v)); } catch (e) { /* lleno */ }
     },
     remove: function (k) {
-      try { localStorage.removeItem('canutillo.' + k); } catch (e) { /* nada */ }
+      try { localStorage.removeItem('pipetv.' + k); } catch (e) { /* nada */ }
     }
   };
 

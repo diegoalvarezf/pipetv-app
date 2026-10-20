@@ -1,5 +1,5 @@
 /*
- * Servicio de CanutilloTV dentro de TizenBrew.
+ * Servicio de PipeTV dentro de TizenBrew.
  *
  * Corre en Node.js en la propia tele (TizenBrew lo arranca al abrir el
  * módulo). Hace de proxy local para descargar listas M3U que no permiten
@@ -29,7 +29,7 @@ var server = http.createServer(function (req, res) {
   try { target = decodeURIComponent(m[1]); } catch (e) { return send(res, 400, 'url mal formada'); }
   if (!/^https?:\/\//i.test(target)) return send(res, 400, 'solo http(s)');
 
-  fetch(target, { timeout: 20000, headers: { 'User-Agent': 'CanutilloTV' } })
+  fetch(target, { timeout: 20000, headers: { 'User-Agent': 'PipeTV' } })
     .then(function (r) {
       return r.text().then(function (text) { send(res, r.status, text); });
     })

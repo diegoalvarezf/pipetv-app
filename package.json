@@ -1,9 +1,9 @@
 {
-  "name": "canutillotv-app",
-  "version": "1.0.8",
+  "name": "pipetv-app",
+  "version": "1.0.10",
   "description": "Canales de listas IPTV públicas en una sola guía, para Samsung Tizen.",
   "packageType": "app",
-  "appName": "CanutilloTV",
+  "appName": "PipeTV",
   "appPath": "index.html",
   "serviceFile": "service.js",
   "keys": [
