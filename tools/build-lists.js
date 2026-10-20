@@ -9,6 +9,9 @@
  *     los bloqueados por país (salvo los de España, que aquí sí se ven)
  *     y los directos de YouTube (no se pueden reproducir)
  *   - cada canal una sola vez, con sus otras calidades como fuentes alternativas
+ *   - fuentes que no responden: se prueban todas y se quitan las caídas. Las de
+ *     España no se prueban, porque GitHub está fuera y las vería bloqueadas.
+ *     (PROBE=0 para saltarse la prueba)
  *
  *   node tools/build-lists.js [carpeta_salida]   (por defecto: lists/)
  */
@@ -29,6 +32,38 @@ const ENG_COUNTRIES = new Set(['US', 'UK', 'GB', 'IE', 'CA', 'AU', 'NZ']);
 const HOME_COUNTRY = 'ES'; // los bloqueados por país de aquí se ven
 const BANNED_CATEGORIES = new Set(['religious', 'shop', 'xxx']);
 const MAX_SOURCES = 3;
+const PROBE = process.env.PROBE !== '0';
+const PROBE_TIMEOUT_MS = 8000;
+const PROBE_CONCURRENCY = 40;
+
+// ¿Responde la fuente? Basta con que devuelva algo con pinta de vídeo o de HLS.
+async function isAlive(url, userAgent, referrer) {
+  const headers = { 'User-Agent': userAgent || 'Mozilla/5.0 (SMART-TV; Tizen 5.5) PipeTV' };
+  if (referrer) headers.Referer = referrer;
+  try {
+    const res = await fetch(url, { headers, redirect: 'follow', signal: AbortSignal.timeout(PROBE_TIMEOUT_MS) });
+    if (!res.ok) return false;
+    const type = (res.headers.get('content-type') || '').toLowerCase();
+    const reader = res.body.getReader();
+    const { value } = await reader.read();
+    reader.cancel().catch(() => {});
+    const head = Buffer.from(value || []).toString('latin1', 0, 64);
+    return head.startsWith('#EXTM3U') || /mpegurl|video|octet-stream|mp2t|dash/.test(type);
+  } catch (e) {
+    return false;
+  }
+}
+
+// Ejecuta fn sobre todos los elementos con un número máximo en paralelo
+async function pool(items, size, fn) {
+  const out = new Array(items.length);
+  let next = 0;
+  async function worker() {
+    while (next < items.length) { const i = next++; out[i] = await fn(items[i], i); }
+  }
+  await Promise.all(Array.from({ length: Math.min(size, items.length) }, worker));
+  return out;
+}
 
 // Listas temáticas: nombre del fichero -> categorías de iptv-org (o país)
 const OUTPUTS = [
@@ -122,11 +157,22 @@ async function buildIptvOrg() {
     if (!item.streams.some((x) => x.url === s.url)) item.streams.push(s);
   }
 
-  const items = [...byChannel.values()];
+  let items = [...byChannel.values()];
   for (const it of items) {
     it.streams.sort((a, b) => qualityRank(b.quality) - qualityRank(a.quality));
-    it.streams = it.streams.slice(0, MAX_SOURCES);
   }
+
+  if (PROBE) {
+    const toProbe = [];
+    for (const it of items) if (it.country !== HOME_COUNTRY) for (const s of it.streams) toProbe.push(s);
+    const alive = await pool(toProbe, PROBE_CONCURRENCY, (s) => isAlive(s.url, s.user_agent, s.referrer));
+    const dead = new Set(toProbe.filter((_, i) => !alive[i]));
+    for (const it of items) it.streams = it.streams.filter((s) => !dead.has(s));
+    const before = items.length;
+    items = items.filter((it) => it.streams.length);
+    console.log(`iptv-org: ${dead.size} de ${toProbe.length} fuentes caídas, ${before - items.length} canales fuera`);
+  }
+  for (const it of items) it.streams = it.streams.slice(0, MAX_SOURCES);
   // Primero los de habla hispana, luego por nombre
   items.sort((a, b) => (b.spanish - a.spanish) || a.name.localeCompare(b.name, 'es'));
 
@@ -144,8 +190,7 @@ async function buildFreeTv() {
   const res = await fetch(FREETV);
   if (!res.ok) throw new Error(`Free-TV: HTTP ${res.status}`);
   const lines = (await res.text()).split(/\r?\n/);
-  const out = ['#EXTM3U'];
-  let count = 0;
+  const entries = [];
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (!line.startsWith('#EXTINF')) continue;
@@ -156,10 +201,18 @@ async function buildFreeTv() {
     if (name.includes('Ⓨ') || /youtube\.com|youtu\.be/.test(url)) continue;
     if (name.includes('Ⓖ') && group !== 'Spain' && group !== 'News (ES)') continue;
     // Quita las marcas de Free-TV (Ⓢ no HD, Ⓖ bloqueo por país) del nombre
-    out.push(line.replace(/\s*[ⓈⒼⓎ]/gu, ''), url);
-    count++;
+    entries.push({ line: line.replace(/\s*[ⓈⒼⓎ]/gu, ''), url, spanish: group === 'Spain' || group === 'News (ES)' });
   }
-  return { text: out.join('\n') + '\n', count };
+
+  let kept = entries;
+  if (PROBE) {
+    const alive = await pool(entries, PROBE_CONCURRENCY, (e) => (e.spanish ? true : isAlive(e.url)));
+    kept = entries.filter((_, i) => alive[i]);
+    console.log(`Free-TV: ${entries.length - kept.length} de ${entries.length} canales caídos`);
+  }
+  const out = ['#EXTM3U'];
+  for (const e of kept) out.push(e.line, e.url);
+  return { text: out.join('\n') + '\n', count: kept.length };
 }
 
 async function main() {

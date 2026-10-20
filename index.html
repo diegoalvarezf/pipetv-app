@@ -23,6 +23,8 @@
     </nav>
 
     <section class="channels-col">
+      <input id="search" class="search" type="text" spellcheck="false" autocomplete="off"
+             autocapitalize="off" placeholder="Canal o programa…">
       <ul id="channels" class="channels"></ul>
       <p id="channels-empty" class="empty"></p>
     </section>
@@ -32,6 +34,16 @@
       <p id="preview-num" class="preview-num"></p>
       <h2 id="preview-name" class="preview-name"></h2>
       <p id="preview-meta" class="preview-meta"></p>
+      <div id="preview-epg" class="preview-epg">
+        <div id="preview-now">
+          <p class="epg-label">Ahora <span id="preview-now-time"></span></p>
+          <p id="preview-now-title" class="epg-title"></p>
+          <div class="epg-bar"><i id="preview-bar"></i></div>
+          <p id="preview-now-desc" class="epg-desc"></p>
+        </div>
+        <p class="epg-label next-label">Después</p>
+        <p id="preview-next" class="epg-next"></p>
+      </div>
     </aside>
 
     <footer class="legend">
@@ -39,7 +51,7 @@
       <span><i class="k green"></i>Otra fuente</span>
       <span><i class="k yellow"></i>Listas</span>
       <span><i class="k blue"></i>YouTube</span>
-      <span class="hint">0–9 marcar canal</span>
+      <span class="hint">0–9 canal · 0 vuelve al anterior</span>
     </footer>
   </main>
 
@@ -54,6 +66,7 @@
         <span id="osd-group"></span>
         <span id="osd-msg" class="osd-msg"></span>
       </div>
+      <div id="osd-epg" class="osd-epg"></div>
     </div>
   </div>
 
@@ -87,6 +100,7 @@
   <script src="js/urls.js"></script>
   <script src="js/m3u.js"></script>
   <script src="js/lists.js"></script>
+  <script src="js/epg.js"></script>
   <script src="js/player.js"></script>
   <script src="js/remote.js"></script>
   <script src="js/app.js"></script>

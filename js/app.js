@@ -10,20 +10,26 @@
   'use strict';
 
   var DEFAULT_LIST = 'https://www.tdtchannels.com/lists/tv.m3u8';
+  var SEARCH_GROUP = 'Buscar';
   var FAV_GROUP = '★ Favoritos';
   var ALL_GROUP = 'Todos';
+  // Guía de programación compacta que genera tools/build-epg.js cada pocas horas
+  var EPG_URL = 'https://raw.githubusercontent.com/diegoalvarezf/pipetv-app/main/epg/tdt.json';
+  var EPG_REFRESH_MS = 60 * 60 * 1000;
+  // Un canal que no ha podido reproducirse se marca "sin señal" durante un día
+  var DEAD_TTL_MS = 24 * 60 * 60 * 1000;
   var CACHE_MAX_CHARS = 600000; // por lista; localStorage ronda los 5 MB en total
 
   var KEY = {
     LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40, ENTER: 13,
     BACK: 10009, ESC: 27, BACKSPACE: 8,
-    CH_UP: 427, CH_DOWN: 428, PAGE_UP: 33, PAGE_DOWN: 34,
+    CH_UP: 427, CH_DOWN: 428, PAGE_UP: 33, PAGE_DOWN: 34, PRE_CH: 10190,
     RED: 403, GREEN: 404, YELLOW: 405, BLUE: 406, INFO: 457,
     IME_DONE: 65376, IME_CANCEL: 65385
   };
 
   var TV_KEYS = ['ChannelUp', 'ChannelDown', 'ColorF0Red', 'ColorF1Green',
-    'ColorF2Yellow', 'ColorF3Blue', 'Info',
+    'ColorF2Yellow', 'ColorF3Blue', 'Info', 'PreviousChannel',
     '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
   var IS_TV = !!window.tizen;
@@ -52,6 +58,10 @@
     playing: null,          // canal en reproducción
     sourceIndex: 0,
     favorites: {},
+    dead: {},               // canal -> cuándo falló
+    previous: null,         // canal visto antes del actual (botón "canal anterior")
+    query: '',              // búsqueda
+    started: false,         // ya se puso el último canal al arrancar
     digits: '',
     digitTimer: null,
     osdTimer: null
@@ -145,7 +155,10 @@
     img.onload = function () { this.style.visibility = ''; };
     logo.appendChild(img);
     li.appendChild(logo);
-    li.appendChild(el('span', 'name'));
+    var text = el('span', 'text');
+    text.appendChild(el('span', 'name'));
+    text.appendChild(el('span', 'now'));
+    li.appendChild(text);
     li.appendChild(el('span', 'fav'));
     li.appendChild(el('span', 'alt'));
     return li;
@@ -161,9 +174,13 @@
       img.style.visibility = 'hidden';
       if (logo) img.src = logo; else img.removeAttribute('src');
     }
-    c[2].textContent = ch.name;
+    c[2].firstChild.textContent = ch.name;
+    var epg = Epg.now(ch);
+    c[2].lastChild.textContent = epg && epg.current ? epg.current.title : '';
     c[3].textContent = isFavorite(ch) ? '★' : '';
-    c[4].textContent = ch.sources.length > 1 ? ch.sources.length + ' fuentes' : '';
+    var dead = isDead(ch);
+    c[4].textContent = dead ? 'sin señal' : (ch.sources.length > 1 ? ch.sources.length + ' fuentes' : '');
+    node.classList.toggle('dead', dead);
     node.classList.toggle('focused', isFocus && state.column === 'channels');
     node.classList.toggle('playing', !!state.playing && state.playing.key === ch.key);
   }
@@ -244,8 +261,9 @@
     state.channels = merged.channels;
     state.byNumber = {};
     merged.channels.forEach(function (c) { state.byNumber[c.number] = c; });
-    state.groups = merged.channels.length ? [FAV_GROUP, ALL_GROUP].concat(merged.groups) : [];
+    state.groups = merged.channels.length ? [SEARCH_GROUP, FAV_GROUP, ALL_GROUP].concat(merged.groups) : [];
     state.favorites = toSet(store.get('favorites', []));
+    state.dead = pruneDead(store.get('dead', {}));
     if (!state.groups.length) {
       state.visible = [];
       renderAll();
@@ -253,7 +271,9 @@
     }
     var last = store.get('lastGroup', ALL_GROUP);
     var gi = state.groups.indexOf(last);
-    if (gi === -1 || (last === FAV_GROUP && !countFavorites())) gi = 1;
+    if (gi === -1 || last === SEARCH_GROUP || (last === FAV_GROUP && !countFavorites())) {
+      gi = state.groups.indexOf(ALL_GROUP);
+    }
     selectGroup(gi, store.get('lastChannel', null));
   }
 
@@ -266,6 +286,7 @@
   // ---------- Grupos y canales ----------
 
   function channelsForGroup(name) {
+    if (name === SEARCH_GROUP) return searchChannels(state.query);
     if (name === ALL_GROUP) return state.channels;
     if (name === FAV_GROUP) return state.channels.filter(isFavorite);
     return state.channels.filter(function (c) { return c.groups.indexOf(name) !== -1; });
@@ -286,6 +307,61 @@
   }
 
   function isFavorite(ch) { return !!state.favorites[ch.key]; }
+
+  // ---------- Búsqueda ----------
+
+  function searchChannels(query) {
+    var q = Epg.normalize(query);
+    if (!q) return [];
+    return state.channels.filter(function (c) {
+      if (c._norm === undefined) c._norm = Epg.normalize(c.name);
+      if (c._norm.indexOf(q) !== -1) return true;
+      var epg = Epg.now(c);
+      return !!(epg && epg.current && Epg.normalize(epg.current.title).indexOf(q) !== -1);
+    });
+  }
+
+  function isSearchGroup() { return state.groups[state.groupIndex] === SEARCH_GROUP; }
+
+  function openSearch() {
+    var input = $('search');
+    input.value = state.query;
+    document.body.classList.add('searching');
+    setTimeout(function () { input.focus(); }, 30);
+  }
+
+  function onSearchInput() {
+    state.query = $('search').value;
+    state.visible = searchChannels(state.query);
+    state.channelIndex = 0;
+    renderChannels();
+  }
+
+  function finishSearch() {
+    $('search').blur();
+    if (state.visible.length) {
+      state.column = 'channels';
+      renderAll();
+    }
+  }
+
+  // ---------- Canales sin señal ----------
+
+  function pruneDead(dead) {
+    var now = Date.now();
+    var out = {};
+    for (var k in dead) if (dead.hasOwnProperty(k) && now - dead[k] < DEAD_TTL_MS) out[k] = dead[k];
+    return out;
+  }
+
+  function isDead(ch) { return !!state.dead[ch.key]; }
+
+  function setDead(ch, dead) {
+    if (dead === isDead(ch)) return;
+    if (dead) state.dead[ch.key] = Date.now();
+    else delete state.dead[ch.key];
+    store.set('dead', state.dead);
+  }
 
   function countFavorites() {
     var n = 0;
@@ -314,6 +390,7 @@
 
   function renderGroups() {
     groupList.update(state.groups, state.groupIndex);
+    document.body.classList.toggle('searching', isSearchGroup());
     document.body.classList.toggle('col-groups', state.column === 'groups');
     document.body.classList.toggle('col-channels', state.column === 'channels');
   }
@@ -321,9 +398,11 @@
   function renderChannels() {
     var empty = $('channels-empty');
     if (!state.visible.length) {
-      empty.textContent = state.groups[state.groupIndex] === FAV_GROUP
-        ? 'Aún no tienes favoritos. Pulsa ROJO sobre un canal para guardarlo aquí.'
-        : (state.channels.length ? 'Este grupo está vacío.' : '');
+      empty.textContent = isSearchGroup()
+        ? (state.query ? 'Nada con «' + state.query + '».' : 'Pulsa OK y escribe el nombre de un canal o de un programa.')
+        : state.groups[state.groupIndex] === FAV_GROUP
+          ? 'Aún no tienes favoritos. Pulsa ROJO sobre un canal para guardarlo aquí.'
+          : (state.channels.length ? 'Este grupo está vacío.' : '');
       empty.style.display = '';
     } else {
       empty.style.display = 'none';
@@ -334,8 +413,9 @@
 
   function renderPreview(ch) {
     var panel = $('preview');
-    if (!ch) { panel.style.visibility = 'hidden'; panel.removeAttribute('data-key'); return; }
-    panel.style.visibility = 'visible';
+    // display y no visibility: el logo pone visibility:visible al cargar y se vería igual
+    if (!ch) { panel.style.display = 'none'; panel.removeAttribute('data-key'); return; }
+    panel.style.display = '';
     if (panel.getAttribute('data-key') === ch.key) return;
     panel.setAttribute('data-key', ch.key);
 
@@ -348,13 +428,33 @@
     var meta = [ch.group];
     if (ch.sources.length > 1) meta.push(ch.sources.length + ' fuentes');
     if (isFavorite(ch)) meta.push('★ favorito');
+    if (isDead(ch)) meta.push('sin señal');
     if (state.playing && state.playing.key === ch.key) meta.push('viendo ahora');
     $('preview-meta').textContent = meta.join('  ·  ');
+    renderPreviewEpg(ch);
 
     // Reinicia la animación de entrada
     panel.classList.remove('swap');
     void panel.offsetWidth;
     panel.classList.add('swap');
+  }
+
+  function renderPreviewEpg(ch) {
+    var epg = Epg.now(ch);
+    var box = $('preview-epg');
+    if (!epg) { box.style.display = 'none'; return; }
+    box.style.display = '';
+    var cur = epg.current;
+    $('preview-now').style.display = cur ? '' : 'none';
+    if (cur) {
+      $('preview-now-time').textContent = Epg.hhmm(cur.start) + ' – ' + Epg.hhmm(cur.stop);
+      $('preview-now-title').textContent = cur.title;
+      $('preview-now-desc').textContent = cur.desc;
+      $('preview-bar').style.width = Math.round(cur.progress * 100) + '%';
+    }
+    var next = epg.next;
+    $('preview-next').style.display = next ? '' : 'none';
+    if (next) $('preview-next').textContent = Epg.hhmm(next.start) + '  ' + next.title;
   }
 
   function setStatus(text) { $('status').textContent = text; }
@@ -463,6 +563,7 @@
 
   function playChannel(ch, sourceIndex) {
     if (!ch) return;
+    if (state.playing && state.playing.key !== ch.key) state.previous = state.playing.key;
     state.playing = ch;
     state.sourceIndex = sourceIndex || 0;
     document.body.classList.add('playing');
@@ -472,7 +573,7 @@
     showOsd(ch, 'Conectando…', true);
 
     Player.play(ch.sources[state.sourceIndex], {
-      onPlaying: function () { showOsd(ch, null); },
+      onPlaying: function () { setDead(ch, false); showOsd(ch, null); },
       onBuffering: function (p) { showOsd(ch, 'Cargando' + (p ? ' ' + p + '%' : '…'), true); },
       onError: function (msg) {
         if (state.playing !== ch) return;
@@ -480,10 +581,27 @@
           toast('Fuente ' + (state.sourceIndex + 1) + ' caída, probando la siguiente');
           playChannel(ch, state.sourceIndex + 1);
         } else {
+          setDead(ch, true);
           showOsd(ch, 'No se puede reproducir (' + msg + ')', true);
         }
       }
     });
+  }
+
+  // Vuelve al canal que se veía antes (botón PRE-CH o un 0 solo)
+  function goPrevious() {
+    if (!state.previous) { toast('Aún no hay canal anterior'); return; }
+    var ch = null;
+    for (var i = 0; i < state.channels.length; i++) {
+      if (state.channels[i].key === state.previous) { ch = state.channels[i]; break; }
+    }
+    if (!ch) { toast('El canal anterior ya no está en las listas'); return; }
+    if (indexInVisible(ch) === -1) {
+      state.groupIndex = state.groups.indexOf(ALL_GROUP);
+      state.visible = state.channels;
+    }
+    state.channelIndex = indexInVisible(ch);
+    playChannel(ch);
   }
 
   function indexInVisible(ch) {
@@ -509,6 +627,12 @@
     $('osd-group').textContent = ch.group +
       (ch.sources.length > 1 ? ' · fuente ' + (state.sourceIndex + 1) + ' de ' + ch.sources.length : '');
     $('osd-msg').textContent = message || '';
+    var epg = Epg.now(ch);
+    var line = '';
+    if (epg && epg.current) line = 'Ahora: ' + epg.current.title + ' (hasta las ' + Epg.hhmm(epg.current.stop) + ')';
+    if (epg && epg.next) line += (line ? '   ·   ' : '') + 'Después: ' + epg.next.title;
+    $('osd-epg').textContent = line;
+    $('osd-epg').style.display = line ? '' : 'none';
     var logo = $('osd-logo');
     if (ch.logo) {
       if (logo.getAttribute('src') !== ch.logo) { logo.style.display = 'none'; logo.src = ch.logo; }
@@ -530,9 +654,11 @@
     $('digits').classList.add('show');
     clearTimeout(state.digitTimer);
     state.digitTimer = setTimeout(function () {
-      var n = parseInt(state.digits, 10);
+      var typed = state.digits;
+      var n = parseInt(typed, 10);
       state.digits = '';
       $('digits').classList.remove('show');
+      if (typed === '0') { goPrevious(); return; }
       var ch = state.byNumber[n];
       if (!ch) { toast('No hay canal ' + n); return; }
       // Al marcar un número pasamos a "Todos" para que el zapping siga en orden.
@@ -576,6 +702,8 @@
       else if (code === KEY.PAGE_UP || code === KEY.CH_UP) selectGroup(Math.max(0, state.groupIndex - 8));
       else if (code === KEY.PAGE_DOWN || code === KEY.CH_DOWN) {
         selectGroup(Math.min(state.groups.length - 1, state.groupIndex + 8));
+      } else if (code === KEY.ENTER && isSearchGroup()) {
+        openSearch();
       } else if ((code === KEY.RIGHT || code === KEY.ENTER) && state.visible.length) {
         state.column = 'channels';
         renderAll();
@@ -592,6 +720,7 @@
       renderAll();
     } else if (code === KEY.ENTER) playChannel(state.visible[state.channelIndex]);
     else if (code === KEY.RED) toggleFavorite(state.visible[state.channelIndex]);
+    else if (code === KEY.PRE_CH) goPrevious();
   }
 
   function openGuide() {
@@ -607,6 +736,7 @@
     else if (code === KEY.ENTER || code === KEY.LEFT) openGuide();
     else if (code === KEY.INFO || code === KEY.RIGHT) { if (state.playing) showOsd(state.playing, null); }
     else if (code === KEY.RED) toggleFavorite(state.playing);
+    else if (code === KEY.PRE_CH) goPrevious();
     else if (code === KEY.GREEN && state.playing && state.playing.sources.length > 1) {
       playChannel(state.playing, (state.sourceIndex + 1) % state.playing.sources.length);
     }
@@ -662,6 +792,11 @@
 
   function onKeyDown(e) {
     var code = e.keyCode;
+    if (document.activeElement === $('search')) {
+      if (code === KEY.ENTER || code === KEY.IME_DONE) { finishSearch(); e.preventDefault(); }
+      else if (code === KEY.BACK || code === KEY.ESC || code === KEY.IME_CANCEL) { $('search').blur(); e.preventDefault(); }
+      return; // el resto de teclas son para el campo
+    }
     if (!IS_TV && DEV_COLOR_KEYS[code] && document.activeElement !== $('list-url')) {
       code = DEV_COLOR_KEYS[code];
       e = { keyCode: code, preventDefault: function () {} };
@@ -705,6 +840,33 @@
     var d = new Date();
     var pad = function (n) { return (n < 10 ? '0' : '') + n; };
     $('clock').textContent = pad(d.getHours()) + ':' + pad(d.getMinutes());
+    // La guía avanza: refrescar barra de progreso y programa actual
+    if (state.screen === 'list' && groupList) {
+      $('preview').removeAttribute('data-key');
+      renderChannels();
+    }
+  }
+
+  // ---------- Guía de programación ----------
+
+  function loadEpg() {
+    // En el Mac se usa la copia de dev/ (el JSON publicado puede ir por detrás)
+    return fetchText(IS_DEV ? '../dev/epg.json' : EPG_URL).then(function (text) {
+      var json = JSON.parse(text);
+      Epg.set(json);
+      store.set('epg', json);
+    }).catch(function () { /* sin guía: se queda la copia guardada */ }).then(function () {
+      if (state.screen === 'list') { $('preview').removeAttribute('data-key'); renderChannels(); }
+    });
+  }
+
+  // Al abrir la app se pone directamente el último canal que se vio
+  function autostart() {
+    if (state.started) return;
+    state.started = true;
+    var key = store.get('lastChannel', null);
+    var ch = state.visible[state.channelIndex];
+    if (key && ch && ch.key === key && state.screen === 'list') playChannel(ch);
   }
 
   document.addEventListener('visibilitychange', function () {
@@ -721,12 +883,16 @@
 
     registerTvKeys();
     setupSettings();
+    $('search').addEventListener('input', onSearchInput);
+    Epg.set(store.get('epg', null));
     document.addEventListener('keydown', onKeyDown);
     showScreen('list');
     tickClock();
-    setInterval(tickClock, 15000);
+    setInterval(tickClock, 60000);
     // Por si se mandó una lista con la app cerrada
     remote.checkOnce(onRemoteUrl);
-    loadList();
+    loadList().then(autostart);
+    loadEpg();
+    setInterval(loadEpg, EPG_REFRESH_MS);
   });
 })();

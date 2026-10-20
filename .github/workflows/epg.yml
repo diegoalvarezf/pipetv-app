@@ -1,0 +1,30 @@
+# Regenera cada 3 horas la guía de programación de PipeTV (epg/tdt.json).
+name: Guía
+
+on:
+  schedule:
+    - cron: '41 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: datos
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/build-epg.js epg/tdt.json
+      - name: Guardar si ha cambiado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add epg
+          git diff --cached --quiet || (git commit -m "Guía $(date -u +'%F %H:%M')" && git pull --rebase -q && git push)
