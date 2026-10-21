@@ -9,8 +9,6 @@ https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/perfiltv/livestream2/chunk
 https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8
 #EXTINF:-1 tvg-name="Net TV" tvg-logo="https://i.imgur.com/EWmshtx.png" tvg-id="NETTV.ar" tvg-chno="27.2" tvg-country="AR" group-title="Argentina",Net TV
 https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="TV Universidad" tvg-logo="https://i.imgur.com/tvLHiAT.png" tvg-id="TVUniversidad.ar" tvg-chno="32.1" tvg-country="AR" group-title="Argentina",TV Universidad
-https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8
 #EXTINF:-1 tvg-name="Telefe" tvg-logo="https://i.imgur.com/wrZfMXn.png" tvg-id="Telefe.ar" tvg-chno="34.1" tvg-country="AR" group-title="Argentina",Telefe
 http://45.134.141.161:2200/ARG/TELEFE_HD/index.m3u8
 #EXTINF:-1 tvg-name="América" tvg-logo="https://i.imgur.com/Jt7dOQm.png" tvg-id="AmericaTV.ar" tvg-chno="36.1" tvg-country="AR" group-title="Argentina",América
@@ -285,16 +283,14 @@ https://lightning-now80s-samsunguk.amagi.tv/playlist.m3u8
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="BBC Radio 1" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd1-epg.png" tvg-id="BBCRadio1.uk" tvg-chno="1" tvg-country="GB" group-title="UK",BBC Radio 1
 https://lsn.lv/bbcradio.m3u8?station=bbc_radio_one&bitrate=320000
-#EXTINF:-1 tvg-name="BBC Radio 4" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd4-epg.png" tvg-id="BBCRadio4FM.uk" tvg-chno="4" tvg-country="GB" group-title="UK",BBC Radio 4
-https://lsn.lv/bbcradio.m3u8?station=bbc_radio_fourfm&bitrate=320000
+#EXTINF:-1 tvg-name="BBC Radio 3" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd3-epg.png" tvg-id="BBCRadio3.uk" tvg-chno="3" tvg-country="GB" group-title="UK",BBC Radio 3
+https://lsn.lv/bbcradio.m3u8?station=bbc_radio_three&bitrate=320000
 #EXTINF:-1 tvg-name="BBC Radio 5 Live" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd5l-epg.png" tvg-id="BBCRadio5Live.uk" tvg-chno="5" tvg-country="GB" group-title="UK",BBC Radio 5 Live
 https://lsn.lv/bbcradio.m3u8?station=bbc_radio_five_live&bitrate=320000
-#EXTINF:-1 tvg-name="BBC Radio 6 Music" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd6-epg.png" tvg-id="BBCRadio6Music.uk" tvg-chno="6" tvg-country="GB" group-title="UK",BBC Radio 6 Music
-https://lsn.lv/bbcradio.m3u8?station=bbc_6music&bitrate=320000
 #EXTINF:-1 tvg-name="BBC Radio 4 Extra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd4x-epg.png" tvg-id="BBCRadio4Extra.uk" tvg-chno="8" tvg-country="GB" group-title="UK",BBC Radio 4 Extra
 https://lsn.lv/bbcradio.m3u8?station=bbc_radio_four_extra&bitrate=320000
-#EXTINF:-1 tvg-name="BBC Asian Network" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcasiannet-epg.png" tvg-id="BBCRadioAsianNetwork.uk" tvg-chno="10" tvg-country="GB" group-title="UK",BBC Asian Network
-https://lsn.lv/bbcradio.m3u8?station=bbc_asian_network&bitrate=320000
+#EXTINF:-1 tvg-name="BBC Radio 5 Sports Extra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd5s-epg.png" tvg-id="BBCRadio5SportsExtra.uk" tvg-chno="9" tvg-country="GB" group-title="UK",BBC Radio 5 Sports Extra
+https://lsn.lv/bbcradio.m3u8?station=bbc_radio_five_live_sports_extra&bitrate=320000
 #EXTINF:-1 tvg-name="BBC World Service" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcws-epg.png" tvg-id="BBCRadioWorldService.uk" tvg-chno="11" tvg-country="GB" group-title="UK",BBC World Service
 http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_world_service.m3u8
 #EXTINF:-1 tvg-name="Retro TV" tvg-logo="https://i.imgur.com/PNTYOgg.png" tvg-id="RetroTVEast.us" tvg-chno="2" tvg-country="US" group-title="USA",Retro TV
@@ -349,6 +345,8 @@ http://181.78.8.199:8000/play/a09k/index.m3u8
 https://59d39900ebfb8.streamlock.net/valetv_480/valetv_480/playlist.m3u8
 #EXTINF:-1 tvg-name="Telesur" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/82/TeleSUR.png" tvg-id="TeleSUR.ve" tvg-chno="8" tvg-country="VE" group-title="Venezuela",Telesur
 https://raw.githubusercontent.com/BellezaEmporium/IPTV_Exception/master/channels/ve/telesur.m3u8
+#EXTINF:-1 tvg-name="Latina TV" tvg-logo="https://intervenhosting.net/imagenes/latinatv.jpg" tvg-id="LatinaTV.ve" tvg-chno="10" tvg-country="VE" group-title="Venezuela",Latina TV
+https://streamtv.latinamedios.com:3413/live/latinatvlive.m3u8
 #EXTINF:-1 tvg-name="inter TV" tvg-logo="https://intervenhosting.net/imagenes/itv.jpg" tvg-id="interTV.ve" tvg-chno="11" tvg-country="VE" group-title="Venezuela",inter TV
 https://streamtv.intervenhosting.net:3439/hybrid/play.m3u8
 #EXTINF:-1 tvg-name="Aguacate TV" tvg-logo="https://intervenhosting.net/imagenes/aguacatetv.jpg" tvg-id="AguacateTV.ve" tvg-chno="12" tvg-country="VE" group-title="Venezuela",Aguacate TV

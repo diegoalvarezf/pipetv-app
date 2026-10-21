@@ -2,8 +2,6 @@
 #EXTINF:-1 tvg-id="AdrenalinaPuraTV.us" tvg-logo="https://i.imgur.com/Pvid2iH.png" group-title="Películas",Adrenalina Pura TV
 https://jmp2.uk/plu-61b793ccf571b80007b7a610.m3u8
 #EXTINF:-1 tvg-id="AMCLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" group-title="Películas",AMC Latin America
-http://15.204.246.24:8080/AMCHD/index.m3u8
-#EXTINF:-1 tvg-id="AMCLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" group-title="Películas",AMC Latin America
 http://138.121.15.230:9002/AMC/index.m3u8
 #EXTINF:-1 tvg-id="AuroraMediaFilms.gt" tvg-logo="https://i.imgur.com/DVC5w6H.png" group-title="Películas",Aurora Media Films
 https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
@@ -27,18 +25,12 @@ https://cc-hqw8u5r1nshjc.akamaized.net/scheduler/scheduleMaster/352.m3u8
 https://jmp2.uk/plu-5d8d164d92e97a5e107638d2.m3u8
 #EXTINF:-1 tvg-id="CineAmor.us" tvg-logo="https://i.imgur.com/eAS86qH.png" group-title="Películas",Cine Amor
 https://jmp2.uk/plu-5f5136317aedfb0007016f93.m3u8
-#EXTINF:-1 tvg-id="CineFamiliar.us" tvg-logo="https://i.imgur.com/ZgP2hE3.png" group-title="Películas",Cine Familiar
-http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/cinefamiliar.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CineFriki.es" tvg-logo="https://i.imgur.com/b3Ospym.png" group-title="Películas",Cine Friki
 https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8
 #EXTINF:-1 tvg-id="CineFriki.es" tvg-logo="https://i.imgur.com/b3Ospym.png" group-title="Películas",Cine Friki
 https://zylo-cinefriki-rakuten.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="CineHispano.us" tvg-logo="https://i.imgur.com/tfgyfrw.png" group-title="Películas",Cine Hispano
-http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/cinehispano.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CinePremiere.us" tvg-logo="https://i.imgur.com/PdhWTO6.png" group-title="Películas",Cine Premiere
 https://jmp2.uk/plu-5cf968040ab7d8f181e6a68b.m3u8
-#EXTINF:-1 tvg-id="CinePremium.us" tvg-logo="https://i.imgur.com/tC3jGd4.png" group-title="Películas",Cine Premium
-http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/cinepremium.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CinePremium.us" tvg-logo="https://i.imgur.com/tC3jGd4.png" group-title="Películas",Cine Premium
 http://190.61.90.17:40000/play/a02i/index.m3u8
 #EXTINF:-1 tvg-id="CineSony.us" tvg-logo="https://i.imgur.com/bZWoDTg.png" group-title="Películas",Cine Sony
@@ -54,9 +46,9 @@ https://d2nq34q0i1r3la.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 #EXTINF:-1 tvg-id="Cinecanal.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png" group-title="Películas",Cinecanal
 http://138.121.15.230:9002/CINECANAL/index.m3u8
 #EXTINF:-1 tvg-id="Cinecanal.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png" group-title="Películas",Cinecanal
-http://15.204.246.24:8080/CinecanalHD/index.m3u8
-#EXTINF:-1 tvg-id="Cinecanal.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png" group-title="Películas",Cinecanal
 http://190.61.47.54:8000/play/a02z/index.m3u8
+#EXTINF:-1 tvg-id="Cinecanal.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png" group-title="Películas",Cinecanal
+https://barinaslive1.boldmss.com/CINECANAL/CINECANAL.isml/CINECANAL.m3u8
 #EXTINF:-1 tvg-id="CineLatino.mx" tvg-logo="https://i.imgur.com/2V0R0xT.png" group-title="Películas",CineLatino
 http://168.196.127.137:6001/play/a08o/index.m3u8
 #EXTINF:-1 tvg-id="CineLatino.mx" tvg-logo="https://i.imgur.com/2V0R0xT.png" group-title="Películas",CineLatino
@@ -89,29 +81,14 @@ http://181.224.200.5:2277/play/a0d1/index.m3u8
 http://200.115.120.1:8000/play/ca030/index.m3u8
 #EXTINF:-1 tvg-id="DePeliculaUS.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/DPel%C3%ADcula_2021.svg/960px-DPel%C3%ADcula_2021.svg.png" group-title="Películas",De Pelicula US
 http://138.121.15.230:9002/DEPELICULA/index.m3u8
-#EXTINF:-1 tvg-id="DHE.us" tvg-logo="https://i.imgur.com/nsttoEa.png" group-title="Películas",DHE
-http://15.204.246.24:8080/DHEHD/index.m3u8
 #EXTINF:-1 tvg-id="FilmArts.ar" tvg-logo="https://i.imgur.com/ukdmEKD.png" group-title="Películas",Film & Arts
 http://200.115.120.1:8000/play/ca131/index.m3u8
 #EXTINF:-1 tvg-id="GoldenPremier.mx" tvg-logo="https://i.imgur.com/JMa7jws.png" group-title="Películas",Golden Premier
 http://200.57.28.141:8540/play/a0ln
 #EXTINF:-1 tvg-id="GoldenPremier2.mx" tvg-logo="https://i.imgur.com/GBlvQBI.png" group-title="Películas",Golden Premier 2
 http://200.57.28.141:8540/play/a0lo
-#EXTINF:-1 tvg-id="HBO.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png" group-title="Películas",HBO
-http://tvsen7.aynascope.net/hbo/index.m3u8
 #EXTINF:-1 tvg-id="HBO2LatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png" group-title="Películas",HBO 2 Latin America
 http://45.171.64.30:6060/play/a00i/index.m3u8
-#EXTINF:-1 tvg-id="HBO2LatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png" group-title="Películas",HBO 2 Latin America
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
-https://bantel-cdn1.iptvperu.tv:1936/Bantel_new/hbo2/chunks.m3u8
-#EXTINF:-1 tvg-id="HBOHits.us" tvg-logo="https://static.hbo.com/2025-09/HBO_Hits_Plex_Logo_bw.svg" group-title="Películas",HBO Hits
-http://tvsen7.aynascope.net/hbo2/index.m3u8
-#EXTINF:-1 tvg-id="HBOMundiLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/960px-HBO_Mundi.svg.png" group-title="Películas",HBO Mundi Latin America
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
-https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/cinemax.stream/chunks.m3u8
-#EXTINF:-1 tvg-id="HBOXtremeLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/HBO_Xtreme.svg/960px-HBO_Xtreme.svg.png" group-title="Películas",HBO Xtreme Latin America
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
-https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/HBO_Xtreme/chunks.m3u8
 #EXTINF:-1 tvg-id="Maxcine.us" tvg-logo="https://gia.tv/streams/pptv/208138.png" group-title="Películas",Maxcine
 https://live20.bozztv.com/giatvplayout7/giatv-208138/playlist.m3u8
 #EXTINF:-1 tvg-id="Maxcine2.us" tvg-logo="https://gia.tv/streams/pptv/209163.png" group-title="Películas",Maxcine 2
@@ -188,17 +165,10 @@ https://oly-ftvpc.otteravision.com/oly/ftvpc/ftvpc.m3u8
 https://run-rt-uh-roku.otteravision.com/run/rt_uh/rt_uh.m3u8
 #EXTINF:-1 tvg-id="SensaCineTVxPluto.de" tvg-logo="https://images.pluto.tv/channels/676e7b4a4bd636000819c6a7/colorLogoPNG_1748957675934.png" group-title="Películas",SensaCine TV x Pluto
 https://jmp2.uk/plu-676e7b4a4bd636000819c6a7.m3u8
-#EXTINF:-1 tvg-id="SonyMoviesLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png" group-title="Películas",Sony Movies Latin America
-http://15.204.246.24:8080/SonyMoviesHD/index.m3u8
 #EXTINF:-1 tvg-id="StarChannel.cl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png" group-title="Películas",Star Channel
 http://138.121.15.230:9002/STAR-CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="StarChannel.co" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png" group-title="Películas",Star Channel
 http://190.61.47.54:8000/play/a035/index.m3u8
-#EXTINF:-1 tvg-id="StarChannelLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png" group-title="Películas",Star Channel Latin America
-http://15.204.246.24:8080/STARCHANNELHD/index.m3u8
-#EXTINF:-1 tvg-id="StarChannelLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png" group-title="Películas",Star Channel Latin America
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
-http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/StarChannel.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="SundanceTV.es" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/SundanceTV_2014.svg/960px-SundanceTV_2014.svg.png" group-title="Películas",Sundance TV
 https://cdn.stmify.com/zapitv/stream/SUNDANCE_TV/sundance_hd.mpd
 #EXTINF:-1 tvg-id="WarnerChannel.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png" group-title="Películas",Warner Channel
@@ -472,6 +442,8 @@ https://jmp2.uk/plu-68c01bed508ba507f0d0dd60.m3u8
 #EXTINF:-1 tvg-id="PlutoTVHorror.se" tvg-logo="https://images.pluto.tv/channels/63a1c9790cc44a0007dc8857/colorLogoPNG.png" group-title="Películas",Pluto TV Horror
 https://jmp2.uk/plu-63a1c9790cc44a0007dc8857.m3u8
 #EXTINF:-1 tvg-id="PlutoTVHorror.se" tvg-logo="https://images.pluto.tv/channels/63a1c9790cc44a0007dc8857/colorLogoPNG.png" group-title="Películas",Pluto TV Horror
+https://jmp2.uk/plu-63a19cb7847a090007f230d7.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHorror.se" tvg-logo="https://images.pluto.tv/channels/63a1c9790cc44a0007dc8857/colorLogoPNG.png" group-title="Películas",Pluto TV Horror
 https://jmp2.uk/plu-63a19e1b9ab2df0007bef7a7.m3u8
 #EXTINF:-1 tvg-id="PlutoTVHorror.us" tvg-logo="https://i.imgur.com/k6qttca.png" group-title="Películas",Pluto TV Horror
 https://jmp2.uk/plu-62ea3f8a38acc80007072d26.m3u8
@@ -587,18 +559,8 @@ http://103.151.60.162:2122/play/a01d/index.m3u8?hls
 http://103.185.24.134:3001/Star-Movies/index.m3u8
 #EXTINF:-1 tvg-id="StarMovies.in" tvg-logo="https://dtil.tmsimg.com/assets/s143829_ld_h15_aa.png?lock=720x540" group-title="Películas",Star Movies
 http://103.151.60.162:2122/play/a02k/index.m3u8?hls
-#EXTINF:-1 tvg-id="StarTrekMovies.se" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Películas",Star Trek Movies
-https://jmp2.uk/plu-6400c281dff38e00083f59da.m3u8
-#EXTINF:-1 tvg-id="StarTrekMovies.se" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Películas",Star Trek Movies
-https://jmp2.uk/plu-6400c228498393000878a9b7.m3u8
-#EXTINF:-1 tvg-id="StarTrekMovies.se" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Películas",Star Trek Movies
-https://jmp2.uk/plu-6400c2a6cb41a40008dbe5bc.m3u8
-#EXTINF:-1 tvg-id="StarTrekTheNextGeneration.us" tvg-logo="https://images.pluto.tv/channels/695c32e61ca20bb8ca802eb9/colorLogoPNG_1768440087394.png" group-title="Películas",Star Trek: The Next Generation
-https://jmp2.uk/plu-695c32e61ca20bb8ca802eb9.m3u8
 #EXTINF:-1 tvg-id="SYFY.us" tvg-logo="https://i.imgur.com/4fMWhUE.png" group-title="Películas",SYFY
 http://23.237.104.106:8080/USA_SYFY/index.m3u8
-#EXTINF:-1 tvg-id="SYFY.us" tvg-logo="https://i.imgur.com/4fMWhUE.png" group-title="Películas",SYFY
-http://tvsen7.aynascope.net/syfy/index.m3u8
 #EXTINF:-1 tvg-id="TheTwilightZone.se" tvg-logo="https://images.pluto.tv/channels/6512ec9f3a0d700008db4f0c/colorLogoPNG.png" group-title="Películas",The Twilight Zone
 https://jmp2.uk/plu-6512ec9f3a0d700008db4f0c.m3u8
 #EXTINF:-1 tvg-id="TheTwilightZone.se" tvg-logo="https://images.pluto.tv/channels/6512ec9f3a0d700008db4f0c/colorLogoPNG.png" group-title="Películas",The Twilight Zone
@@ -615,17 +577,12 @@ https://rpn.bozztv.com/gusa/gusa-tvsdriveinmovie/index.m3u8
 http://45.167.1.138:8000/play/a06m
 #EXTINF:-1 tvg-id="UniversalCinema.us" tvg-logo="https://i.imgur.com/XxfET68.png" group-title="Películas",Universal Cinema
 http://168.196.127.137:6001/play/a09b/index.m3u8
-#EXTINF:-1 tvg-id="UniversalComedy.us" tvg-logo="https://i.imgur.com/avBL8pQ.png" group-title="Películas",Universal Comedy
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/universalcomedy/playlist.m3u8
 #EXTINF:-1 tvg-id="ViafreeMovies.se" tvg-logo="https://images.pluto.tv/channels/62bebc3459624e00078209c3/colorLogoPNG.png" group-title="Películas",Viafree Movies
 https://jmp2.uk/plu-62bebc3459624e00078209c3.m3u8
 #EXTINF:-1 tvg-id="ViafreeMovies.se" tvg-logo="https://images.pluto.tv/channels/62bebc3459624e00078209c3/colorLogoPNG.png" group-title="Películas",Viafree Movies
 https://jmp2.uk/plu-62beb44e3afd120007915d1b.m3u8
 #EXTINF:-1 tvg-id="ViafreeMovies.se" tvg-logo="https://images.pluto.tv/channels/62bebc3459624e00078209c3/colorLogoPNG.png" group-title="Películas",Viafree Movies
 https://jmp2.uk/plu-62f64ec9eb1045000728cad6.m3u8
-#EXTINF:-1 tvg-id="ViasatKino.ua" tvg-logo="https://i.imgur.com/io0WAkA.png" group-title="Películas",Viasat Kino
-http://176.61.157.250/TV1000/index.m3u8
 #EXTINF:-1 tvg-id="ViasatKino.ua" tvg-logo="https://i.imgur.com/io0WAkA.png" group-title="Películas",Viasat Kino
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=http://live.tvstitch.com/
