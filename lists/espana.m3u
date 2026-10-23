@@ -57,6 +57,8 @@ https://streamtv2.elitecomunicacion.cloud:3628/live/arabitv2025live.m3u8
 https://cdn.stmify.com/zapitv/stream/AXN_MOVIES/axn_white.mpd
 #EXTINF:-1 tvg-id="BCNGospelTV.es" tvg-logo="https://bcngospelchannel.com/wp-content/uploads/2025/09/bcn-gospel-channer-favicon.png" group-title="España",BCN Gospel TV
 https://live1.ovalcast.com:3916/live/bcngospeltvlive.m3u8
+#EXTINF:-1 tvg-id="Boing.es" tvg-logo="https://i.imgur.com/nUYuCAP.png" group-title="España",Boing
+http://digisat.ddns.net:4022/udp/239.0.5.177:8208
 #EXTINF:-1 tvg-id="Canal1MarMenorTorrePacheco.es" tvg-logo="https://i.imgur.com/MQOwCdZ.png" group-title="España",Canal 1 Mar Menor Torre Pacheco
 https://directo.tuwebtv.es/canal1.m3u8
 #EXTINF:-1 tvg-id="Canal25TV.es" tvg-logo="https://i.imgur.com/p6YA5k0.png" group-title="España",Canal 25 TV
