@@ -68,6 +68,8 @@ http://38.65.175.84:8000/play/a093/index.m3u8
 #EXTINF:-1 tvg-id="CinemaxLatinAmerica.us" tvg-logo="https://i.imgur.com/cZWoJWD.png" group-title="Películas",Cinemax Latin America
 https://streaming.onnethn.com/CINEMAX/playlist.m3u8
 #EXTINF:-1 tvg-id="ClaroCinema.mx" tvg-logo="https://i.imgur.com/SOLGQxQ.jpg" group-title="Películas",Claro Cinema
+http://158.172.217.18:8000/play/a00d/index.m3u8
+#EXTINF:-1 tvg-id="ClaroCinema.mx" tvg-logo="https://i.imgur.com/SOLGQxQ.jpg" group-title="Películas",Claro Cinema
 http://45.171.64.30:6060/play/a039/index.m3u8
 #EXTINF:-1 tvg-id="CosmosTv.ar" tvg-logo="https://cdn4.fmcosmos.com/s4/2025/11/03/fmcosmos/images/15/92/159284_a18e887e336fef3bc6b188314a173ce10cbe5157966e839517e2b0428d7aed46/xs.webp" group-title="Películas",Cosmos Tv
 https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8
@@ -77,8 +79,6 @@ https://canaletaplus.com:3922/live/cosmoslive.m3u8
 http://38.19.41.46:8081/DEPELICULA/index.m3u8
 #EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx" tvg-logo="https://i.imgur.com/aksM8pa.png" group-title="Películas",De Pelicula Latin America
 http://15.204.196.147:22880/RECEPCION-DPELICULA-LATAM-FHD/video.m3u8
-#EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx" tvg-logo="https://i.imgur.com/aksM8pa.png" group-title="Películas",De Pelicula Latin America
-http://181.224.200.5:2277/play/a0d1/index.m3u8
 #EXTINF:-1 tvg-id="DePeliculaPlus.mx" tvg-logo="https://i.imgur.com/MMhSmDK.png" group-title="Películas",De Pelicula Plus
 http://200.115.120.1:8000/play/ca030/index.m3u8
 #EXTINF:-1 tvg-id="DePeliculaUS.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/DPel%C3%ADcula_2021.svg/960px-DPel%C3%ADcula_2021.svg.png" group-title="Películas",De Pelicula US
@@ -554,16 +554,12 @@ https://jmp2.uk/plu-6086d3f420fc8500075f8dbf.m3u8
 https://jmp2.uk/plu-62c5d80dc6de440007e033eb.m3u8
 #EXTINF:-1 tvg-id="Runtime.us" tvg-logo="https://i.imgur.com/2USCMvP.png" group-title="Películas",Runtime
 https://jmp2.uk/plu-62c5d32e2c48f9000715b6e9.m3u8
-#EXTINF:-1 tvg-id="SonyPix.in" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Películas",Sony Pix
-http://103.151.60.162:2122/play/a01d/index.m3u8?hls
 #EXTINF:-1 tvg-id="StarMovies.in" tvg-logo="https://dtil.tmsimg.com/assets/s143829_ld_h15_aa.png?lock=720x540" group-title="Películas",Star Movies
 http://103.151.60.162:2122/play/a02k/index.m3u8?hls
 #EXTINF:-1 tvg-id="StarTrekMovies.se" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Películas",Star Trek Movies
 https://jmp2.uk/plu-6400c281dff38e00083f59da.m3u8
-#EXTINF:-1 tvg-id="StarTrekDeepSpaceNine.us" tvg-logo="https://images.pluto.tv/channels/65c69bbfd77d450008c7ffee/colorLogoPNG_1758310416057.png" group-title="Películas",Star Trek: Deep Space Nine
-https://jmp2.uk/plu-65c69bbfd77d450008c7ffee.m3u8
-#EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.se" tvg-logo="https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png" group-title="Películas",Star Trek: The Original Series
-https://jmp2.uk/plu-693ade4d569386f93f235bb6.m3u8
+#EXTINF:-1 tvg-id="StarTrekMovies.se" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Películas",Star Trek Movies
+https://jmp2.uk/plu-6400c228498393000878a9b7.m3u8
 #EXTINF:-1 tvg-id="SYFY.us" tvg-logo="https://i.imgur.com/4fMWhUE.png" group-title="Películas",SYFY
 http://23.237.104.106:8080/USA_SYFY/index.m3u8
 #EXTINF:-1 tvg-id="SYFY.us" tvg-logo="https://i.imgur.com/4fMWhUE.png" group-title="Películas",SYFY
