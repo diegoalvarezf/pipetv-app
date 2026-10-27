@@ -48,6 +48,8 @@ http://190.61.47.54:8000/play/a004/index.m3u8
 http://168.228.44.241:9997/play/a06p/index.m3u8
 #EXTINF:-1 tvg-id="ESPNLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" group-title="Deportes",ESPN Latin America
 https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8
+#EXTINF:-1 tvg-id="ESPNPremium.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png" group-title="Deportes",ESPN Premium
+http://158.172.155.130:8000/play/a0ao/index.m3u8
 #EXTINF:-1 tvg-id="FoxDeportes.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/FOX_Deportes_logo.png/960px-FOX_Deportes_logo.png" group-title="Deportes",Fox Deportes
 https://live-manifest.production-public.tubi.io/live/d906efca-1302-4e29-b0d9-9a1d7a305d69/playlist.m3u8
 #EXTINF:-1 tvg-id="FoxSports.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/960px-FOX_Sports_logo.svg.png" group-title="Deportes",Fox Sports
@@ -84,8 +86,6 @@ https://ocshls-2-olympicchannel.akamaized.net/ocshls/OCTV_32.m3u8
 https://jmp2.uk/plu-5dcde07af1c85b0009b18651.m3u8
 #EXTINF:-1 tvg-id="PlutoTVESports.us" tvg-logo="https://images.pluto.tv/channels/5ff3934600d4c7000733ff49/colorLogoPNG.png" group-title="Deportes",Pluto TV E-Sports
 https://jmp2.uk/plu-5ff3934600d4c7000733ff49.m3u8
-#EXTINF:-1 tvg-id="PXSports.mx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/PX_Sports_-_Logo.png/960px-PX_Sports_-_Logo.png" group-title="Deportes",PX Sports
-http://38.65.175.84:8000/play/a0ku/index.m3u8
 #EXTINF:-1 tvg-id="RealMadridTV.es" tvg-logo="https://i.imgur.com/5pMo7dL.png" group-title="Deportes",Real Madrid TV
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 #EXTINF:-1 tvg-id="RealMadridTV.es" tvg-logo="https://i.imgur.com/5pMo7dL.png" group-title="Deportes",Real Madrid TV
@@ -115,10 +115,6 @@ https://live-04-11-tyc-app-web.vodgc.net/tyc24/index.m3u8
 http://45.170.130.224:8000/play/a020/index.m3u8
 #EXTINF:-1 tvg-id="WinSports.co" tvg-logo="https://i.imgur.com/DuSSrHV.png" group-title="Deportes",Win Sports
 http://138.121.15.230:9002/WIN-SPORT/index.m3u8
-#EXTINF:-1 tvg-id="WinSports.co" tvg-logo="https://i.imgur.com/DuSSrHV.png" group-title="Deportes",Win Sports
-http://181.78.12.119:16123/play/ch18/index.m3u8
-#EXTINF:-1 tvg-id="WinPlusFutbol.co" tvg-logo="https://i.imgur.com/0UN87vB.png" group-title="Deportes",Win+ Futbol
-http://181.78.12.119:16123/play/ch19/index.m3u8
 #EXTINF:-1 tvg-id="30AGolfKingdom.us" tvg-logo="https://i.imgur.com/Lv53nh4.png" group-title="Deportes",30A Golf Kingdom
 https://30a-tv.com/feeds/vidaa/golf.m3u8
 #EXTINF:-1 tvg-id="ACCDigitalNetwork.us" tvg-logo="https://i.imgur.com/V6Kaqha.png" group-title="Deportes",ACC Digital Network
@@ -378,12 +374,6 @@ https://cdn.stmify.com/out/v1/SKY_SPORTS_F1/index.m3u8
 https://cdn.stmify.com/out/v1/SKY_SPORTS_ACTION/index.m3u8
 #EXTINF:-1 tvg-id="SlopesTV.us" tvg-logo="https://i.imgur.com/8bzAfgK.png" group-title="Deportes",Slopes TV
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2241
-#EXTINF:-1 tvg-id="SonySportsTen1.in" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" group-title="Deportes",Sony Sports Ten 1
-http://103.151.60.162:2122/play/a01c/index.m3u8?hls
-#EXTINF:-1 tvg-id="SonySportsTen2.in" tvg-logo="https://dtil.tmsimg.com/assets/s157592_ld_h15_aa.png?lock=720x540" group-title="Deportes",Sony Sports Ten 2
-http://103.151.60.162:2122/play/a01b/index.m3u8?hls
-#EXTINF:-1 tvg-id="SonySportsTen5.in" tvg-logo="https://dtil.tmsimg.com/assets/s157593_ld_h15_aa.png?lock=720x540" group-title="Deportes",Sony Sports Ten 5
-http://103.151.60.162:2122/play/a028/index.m3u8?hls
 #EXTINF:-1 tvg-id="Sport1Baltic.ua" tvg-logo="https://i.imgur.com/aBY7QK4.png" group-title="Deportes",Sport 1 Baltic
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/461/index.m3u8
@@ -396,8 +386,6 @@ https://sportsgrid-tribal.amagi.tv/playlist.m3u8
 https://amg00315-sportsgrid-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SportsGrid.us" tvg-logo="https://i.imgur.com/ulGKX30.png" group-title="Deportes",SportsGrid
 https://sportsgrid-plex.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="Stadium.us" tvg-logo="https://i.imgur.com/SnZOiER.png" group-title="Deportes",Stadium
-https://aegis-cloudfront-1.tubi.video/74681dcc-e6d0-4add-ad67-a22ad9c152e6/playlist.m3u8
 #EXTINF:-1 tvg-id="StarSports2.in" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" group-title="Deportes",Star Sports 2
 http://103.151.60.162:2122/play/a00v/index.m3u8?hls
 #EXTINF:-1 tvg-id="StarSportsSelect1.in" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1176/1783001141176-h.jpg" group-title="Deportes",Star Sports Select 1

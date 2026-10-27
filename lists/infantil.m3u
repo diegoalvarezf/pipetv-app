@@ -13,8 +13,6 @@ http://168.228.44.241:9997/play/a07u/index.m3u8
 https://cdn.fast.jwp.services/v1/channel/1_jB6940Ei_TvhvIHDL/manifest.m3u8
 #EXTINF:-1 tvg-id="BabyTV.uk" tvg-logo="https://i.imgur.com/4BDJ5FT.png" group-title="Infantil",BabyTV
 http://138.121.15.230:9002/BABY-TV/index.m3u8
-#EXTINF:-1 tvg-id="BabyTV.uk" tvg-logo="https://i.imgur.com/4BDJ5FT.png" group-title="Infantil",BabyTV
-http://181.78.12.119:16123/play/ch01/index.m3u8
 #EXTINF:-1 tvg-id="BobEsponja.de" tvg-logo="https://i.imgur.com/nmZ2nId.png" group-title="Infantil",Bob Esponja
 https://jmp2.uk/plu-5f1aca0b4e448e00075e7c5e.m3u8
 #EXTINF:-1 tvg-id="BobEsponjaPantalonesCuadrados.us" tvg-logo="https://images.pluto.tv/channels/6254598f5083f800076d8563/colorLogoPNG_1781042617821.png" group-title="Infantil",Bob Esponja Pantalones Cuadrados
@@ -58,7 +56,7 @@ http://38.224.231.176:8000/play/a01j/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryKidsLatinAmerica.us" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Discovery_Kids_2021_2D_sin_wordmark.svg/960px-Discovery_Kids_2021_2D_sin_wordmark.svg.png" group-title="Infantil",Discovery Kids Latin America
 http://38.134.250.110:8000/play/a003/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryKidsLatinAmerica.us" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Discovery_Kids_2021_2D_sin_wordmark.svg/960px-Discovery_Kids_2021_2D_sin_wordmark.svg.png" group-title="Infantil",Discovery Kids Latin America
-http://38.65.175.84:8000/play/a0an/index.m3u8
+http://181.224.200.5:2277/play/a00o/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="Infantil",Disney Channel Latin America
 http://181.78.8.199:8000/play/a0dn/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="Infantil",Disney Channel Latin America
@@ -126,6 +124,8 @@ http://138.59.227.20:8000/play/a05t/index.m3u8
 https://live-evg7.tv360.bitel.com.pe/bitel/pequestv/playlist.m3u8
 #EXTINF:-1 tvg-id="PlimPlim.ar" tvg-logo="https://i.imgur.com/MYc8srh.png" group-title="Infantil",Plim Plim
 http://200.115.120.1:8000/play/ca091/index.m3u8
+#EXTINF:-1 tvg-id="PlimPlim.ar" tvg-logo="https://i.imgur.com/MYc8srh.png" group-title="Infantil",Plim Plim
+http://45.70.168.162:1503/play/a02a/index.m3u8
 #EXTINF:-1 tvg-id="PlutoTVJunior.us" tvg-logo="https://i.imgur.com/7sApMZS.png" group-title="Infantil",Pluto TV Junior
 https://jmp2.uk/plu-5dcde2ac4bc6c500094ab45b.m3u8
 #EXTINF:-1 tvg-id="PlutoTVKids.us" tvg-logo="https://i.imgur.com/yVSLWy5.png" group-title="Infantil",Pluto TV Kids
@@ -309,8 +309,6 @@ https://jmp2.uk/plu-5da0c85bd2c9c10009370984.m3u8
 #EXTINF:-1 tvg-id="NickJr.cz" tvg-logo="https://i.imgur.com/KT4tdQs.png" group-title="Infantil",Nick Jr.
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 http://88.212.15.50/live/test_nick_jr/playlist.m3u8
-#EXTINF:-1 tvg-id="NickJr.in" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/1730/1785252911730-h.jpg" group-title="Infantil",Nick Jr.
-http://103.151.60.162:2122/play/a00s/index.m3u8?hls
 #EXTINF:-1 tvg-id="NickJr.it" tvg-logo="https://i.imgur.com/6p3eFgf.png" group-title="Infantil",Nick Jr.
 http://102.129.186.182:81/nick/index.m3u8
 #EXTINF:-1 tvg-id="NickJr.it" tvg-logo="https://i.imgur.com/6p3eFgf.png" group-title="Infantil",Nick Jr.
@@ -327,8 +325,6 @@ https://ma.anixa.tv/clips/stream/nickelodeon/playlist.php
 http://198.58.104.90:8989/nickelodeon/index.m3u8
 #EXTINF:-1 tvg-id="Nickelodeonenespanol.us" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png" group-title="Infantil",Nickelodeon en espanol
 https://jmp2.uk/plu-5d8d08395f39465da6fb3ec4.m3u8
-#EXTINF:-1 tvg-id="NickelodeonGlobal.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/960px-Nickelodeon_2009_logo.svg.png" group-title="Infantil",Nickelodeon Global
-http://103.151.60.162:2122/play/a017/index.m3u8?hls
 #EXTINF:-1 tvg-id="NickelodeonPlutoTV.us" tvg-logo="https://images.pluto.tv/channels/5ca673e0d0bd6c2689c94ce3/colorLogoPNG.png" group-title="Infantil",Nickelodeon Pluto TV
 https://jmp2.uk/plu-5ca673e0d0bd6c2689c94ce3.m3u8
 #EXTINF:-1 tvg-id="Nicktoons.pl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/be/Nicktoons_Logo_2023.svg" group-title="Infantil",Nicktoons

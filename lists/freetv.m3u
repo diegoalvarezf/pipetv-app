@@ -27,14 +27,8 @@ https://i.mjh.nz/.r/10peach-nsw.m3u8
 https://dce3793146fef017.mediapackage.us-west-2.amazonaws.com/out/v1/55cdf73af7894775ba6de8f57482b66a/CMAF_HLS/index.m3u8
 #EXTINF:-1 tvg-name="TVSN" tvg-logo="https://i.imgur.com/p3QCBOo.png" tvg-id="TVSN.au" tvg-chno="5" tvg-country="AU" group-title="Australia",TVSN
 https://tvsnhlslivetest.akamaized.net/hls/live/2034711/EXPO-MSL4/master.m3u8
-#EXTINF:-1 tvg-name="ABC Kids" tvg-logo="https://i.imgur.com/GWDRR1t.png" tvg-id="ABCKids.au" tvg-chno="3" tvg-country="AU" group-title="Australia",ABC Kids
-https://c.mjh.nz/abc-kids.m3u8
-#EXTINF:-1 tvg-name="ABC Me" tvg-logo="https://i.imgur.com/gBh54wY.png" tvg-id="ABCMe.au" tvg-chno="4" tvg-country="AU" group-title="Australia",ABC Me
-https://c.mjh.nz/abc-me.m3u8
 #EXTINF:-1 tvg-name="ABC News" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/ABC_News_Channel.svg/500px-ABC_News_Channel.svg.png" tvg-id="ABCNews.au" tvg-chno="5" tvg-country="AU" group-title="Australia",ABC News
 https://c.mjh.nz/abc-news.m3u8
-#EXTINF:-1 tvg-name="7two" tvg-logo="https://i.imgur.com/6pyIg02.png" tvg-id="7two.au" tvg-chno="5" tvg-country="AU" group-title="Australia",7two
-https://i.mjh.nz/.r/7two-syd.m3u8
 #EXTINF:-1 tvg-name="7mate" tvg-logo="https://i.imgur.com/zpr12HP.png" tvg-id="7mate.au" tvg-chno="5" tvg-country="AU" group-title="Australia",7mate
 https://i.mjh.nz/.r/7mate-syd.m3u8
 #EXTINF:-1 tvg-name="7flix" tvg-logo="https://i.imgur.com/6iIYCyC.png" tvg-id="7flix.au" tvg-chno="5" tvg-country="AU" group-title="Australia",7flix
@@ -125,8 +119,6 @@ https://stream.ontvmx.com/ontv/ghxTYEQmKkB2UJyVuW/playlist.m3u8
 https://5ca9af4645e15.streamlock.net/mexicotravel/videomexicotravel/playlist.m3u8
 #EXTINF:-1 tvg-name="Estrella TV" tvg-logo="https://graph.facebook.com/EstrellaTV/picture?width=200&height=200" tvg-id="EstrellaTV.mx" tvg-chno="13" tvg-country="MX" group-title="Mexico",Estrella TV
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00567-estrellamedia-estrellatv-estrellamedia/playlist.m3u8
-#EXTINF:-1 tvg-name="TELE 10 Nayarit" tvg-logo="https://graph.facebook.com/Tele10Nayarit/picture?width=200&height=200" tvg-id="Tele10Nayarit.mx" tvg-chno="14" tvg-country="MX" group-title="Mexico",TELE 10 Nayarit
-https://live.iplanay.gob.mx/hls/nayarittv.m3u8
 #EXTINF:-1 tvg-name="Panamericana TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/26/Panamericana_tv_2009.png" tvg-id="PanamericanaTV.pe" tvg-chno="5" tvg-country="PE" group-title="Peru",Panamericana TV
 http://45.171.108.253:8888/PANAMERICANA/index.m3u8
 #EXTINF:-1 tvg-name="ATV+ Noticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f4/Atv_noticias_logo.png" tvg-id="ATVPlus.pe" tvg-chno="15" tvg-country="PE" group-title="Peru",ATV+ Noticias
@@ -231,8 +223,6 @@ https://rtvelivestream.rtve.es/rtvesec/can/la1_can_main_dvr.m3u8
 https://rtvelivestream.rtve.es/rtvesec/cat/la2_cat_main_dvr.m3u8
 #EXTINF:-1 tvg-name="La 2 (Canarias)" tvg-logo="https://i.imgur.com/DmuTwDw.png" tvg-id="La2Canarias.es" tvg-chno="21" tvg-country="ES" group-title="Spain",La 2 (Canarias)
 https://ztnr.rtve.es/ztnr/5468585.m3u8
-#EXTINF:-1 tvg-name="QVC UK" tvg-logo="https://i.imgur.com/6TWUVrh.png" tvg-id="QVCUK.uk" tvg-chno="18" tvg-country="GB" group-title="UK",QVC UK
-https://qvcuk-live.akamaized.net/hls/live/2097112/qvc/3/3.m3u8
 #EXTINF:-1 tvg-name="TJC" tvg-logo="https://i.imgur.com/fk5rEje.png" tvg-id="TJC.uk" tvg-chno="22" tvg-country="GB" group-title="UK",TJC
 https://cdn-shop-lc-01.akamaized.net/Content/HLS_HLS/Live/channel(TJCOTT)/index.m3u8
 #EXTINF:-1 tvg-name="Great! Movies" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Great%21_Movies_logo_2021.svg/500px-Great%21_Movies_logo_2021.svg.png" tvg-id="GreatMovies.uk" tvg-chno="34" tvg-country="GB" group-title="UK",Great! Movies
@@ -265,32 +255,24 @@ https://master.nhkworld.jp/nhkworld-tv/playlist/live.m3u8
 http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b2256000_sleng.m3u8
 #EXTINF:-1 tvg-name="TRT World" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TRT_World.svg/500px-TRT_World.svg.png" tvg-id="TRTWorld.tr" tvg-chno="215" tvg-country="GB" group-title="UK",TRT World
 https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8
-#EXTINF:-1 tvg-name="QVC Beauty" tvg-logo="https://i.imgur.com/ZBHtqk1.png" tvg-id="QVCBeautyUK.uk" tvg-chno="801" tvg-country="GB" group-title="UK",QVC Beauty
-https://qvcuk-live.akamaized.net/hls/live/2097112/qby/3/3.m3u8
-#EXTINF:-1 tvg-name="QVC Extra" tvg-logo="https://i.imgur.com/TIe5T9Z.png" tvg-id="QVCExtraUK.uk" tvg-chno="802" tvg-country="GB" group-title="UK",QVC Extra
-https://qvcuk-live.akamaized.net/hls/live/2097112/qex/3/3.m3u8
-#EXTINF:-1 tvg-name="QVC Style" tvg-logo="https://i.imgur.com/6HZlLL3.png" tvg-id="QVCStyleUK.uk" tvg-chno="803" tvg-country="GB" group-title="UK",QVC Style
-https://qvcuk-live.akamaized.net/hls/live/2097112/qst/3/3.m3u8
 #EXTINF:-1 tvg-name="Now 70s" tvg-logo="https://i.imgur.com/qiCCX5X.png" tvg-id="Now70s.uk" tvg-chno="361" tvg-country="GB" group-title="UK",Now 70s
 https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Now 80s" tvg-logo="https://i.imgur.com/8paz37m.png" tvg-id="Now80s.uk" tvg-chno="362" tvg-country="GB" group-title="UK",Now 80s
 https://lightning-now80s-samsunguk.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Now Rock" tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/89/NOW_Rock_logo.png" tvg-id="NowRock.uk" tvg-chno="363" tvg-country="GB" group-title="UK",Now Rock
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="BBC Radio 1" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd1-epg.png" tvg-id="BBCRadio1.uk" tvg-chno="1" tvg-country="GB" group-title="UK",BBC Radio 1
-https://lsn.lv/bbcradio.m3u8?station=bbc_radio_one&bitrate=320000
 #EXTINF:-1 tvg-name="BBC Radio 2" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd2-epg.png" tvg-id="BBCRadio2.uk" tvg-chno="2" tvg-country="GB" group-title="UK",BBC Radio 2
 https://lsn.lv/bbcradio.m3u8?station=bbc_radio_two&bitrate=320000
-#EXTINF:-1 tvg-name="BBC Radio 3" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd3-epg.png" tvg-id="BBCRadio3.uk" tvg-chno="3" tvg-country="GB" group-title="UK",BBC Radio 3
-https://lsn.lv/bbcradio.m3u8?station=bbc_radio_three&bitrate=320000
-#EXTINF:-1 tvg-name="BBC Radio 4" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd4-epg.png" tvg-id="BBCRadio4FM.uk" tvg-chno="4" tvg-country="GB" group-title="UK",BBC Radio 4
-https://lsn.lv/bbcradio.m3u8?station=bbc_radio_fourfm&bitrate=320000
 #EXTINF:-1 tvg-name="BBC Radio 5 Live" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd5l-epg.png" tvg-id="BBCRadio5Live.uk" tvg-chno="5" tvg-country="GB" group-title="UK",BBC Radio 5 Live
 https://lsn.lv/bbcradio.m3u8?station=bbc_radio_five_live&bitrate=320000
+#EXTINF:-1 tvg-name="BBC Radio 6 Music" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd6-epg.png" tvg-id="BBCRadio6Music.uk" tvg-chno="6" tvg-country="GB" group-title="UK",BBC Radio 6 Music
+https://lsn.lv/bbcradio.m3u8?station=bbc_6music&bitrate=320000
 #EXTINF:-1 tvg-name="BBC Radio 1Xtra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd1x-epg.png" tvg-id="BBCRadio1Xtra.uk" tvg-chno="7" tvg-country="GB" group-title="UK",BBC Radio 1Xtra
 https://lsn.lv/bbcradio.m3u8?station=bbc_1xtra&bitrate=320000
-#EXTINF:-1 tvg-name="BBC Radio 5 Sports Extra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd5s-epg.png" tvg-id="BBCRadio5SportsExtra.uk" tvg-chno="9" tvg-country="GB" group-title="UK",BBC Radio 5 Sports Extra
-https://lsn.lv/bbcradio.m3u8?station=bbc_radio_five_live_sports_extra&bitrate=320000
+#EXTINF:-1 tvg-name="BBC Radio 4 Extra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd4x-epg.png" tvg-id="BBCRadio4Extra.uk" tvg-chno="8" tvg-country="GB" group-title="UK",BBC Radio 4 Extra
+https://lsn.lv/bbcradio.m3u8?station=bbc_radio_four_extra&bitrate=320000
+#EXTINF:-1 tvg-name="BBC Asian Network" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcasiannet-epg.png" tvg-id="BBCRadioAsianNetwork.uk" tvg-chno="10" tvg-country="GB" group-title="UK",BBC Asian Network
+https://lsn.lv/bbcradio.m3u8?station=bbc_asian_network&bitrate=320000
 #EXTINF:-1 tvg-name="BBC World Service" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcws-epg.png" tvg-id="BBCRadioWorldService.uk" tvg-chno="11" tvg-country="GB" group-title="UK",BBC World Service
 http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_world_service.m3u8
 #EXTINF:-1 tvg-name="Retro TV" tvg-logo="https://i.imgur.com/PNTYOgg.png" tvg-id="RetroTVEast.us" tvg-chno="2" tvg-country="US" group-title="USA",Retro TV

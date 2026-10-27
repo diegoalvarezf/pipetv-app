@@ -127,8 +127,6 @@ https://dai.google.com/linear/hls/event/oYQGDqEGTmGdHE_fz9oLlg/master.m3u8
 https://redirector.rudo.video/hls-video/567ffde3fa319fadf3419efda25619456231dfea/latinanoticias/latinanoticias.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LeMondeen24h.cd" tvg-logo="https://i.imgur.com/2igwi7g.png" group-title="Noticias",Le Monde en 24h
 https://stream.berosat.live/hls/monde24h-tv-index/monde24h-tv-index.m3u8
-#EXTINF:-1 tvg-id="MayaTV.hn" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Maya_TV_logo.png/960px-Maya_TV_logo.png" group-title="Noticias",Maya TV
-https://media.streambrothers.com:19360/8036/8036.m3u8
 #EXTINF:-1 tvg-id="MegaTV.py" tvg-logo="https://i.imgur.com/CaA7l86.png" group-title="Noticias",Mega TV
 https://www.desde-paraguay.com/mega.m3u8
 #EXTINF:-1 tvg-id="MeganoticiasAhora.cl" tvg-logo="https://i.imgur.com/JCVEqTc.png" group-title="Noticias",Meganoticias Ahora
@@ -164,9 +162,9 @@ https://copacogen.desdeparaguay.net/npy/npy_py_alta/playlist.m3u8?admin=tvaccion
 #EXTINF:-1 tvg-id="NTN24.co" tvg-logo="https://i.imgur.com/UoKmSAP.png" group-title="Noticias",NTN24
 https://stream1.bitred.cl/ntn24/index.m3u8
 #EXTINF:-1 tvg-id="NTN24.co" tvg-logo="https://i.imgur.com/UoKmSAP.png" group-title="Noticias",NTN24
-http://181.78.12.119:16123/play/ch80/index.m3u8
-#EXTINF:-1 tvg-id="NTN24.co" tvg-logo="https://i.imgur.com/UoKmSAP.png" group-title="Noticias",NTN24
 http://181.224.200.5:2277/play/a026/index.m3u8
+#EXTINF:-1 tvg-id="NTN24.co" tvg-logo="https://i.imgur.com/UoKmSAP.png" group-title="Noticias",NTN24
+http://181.78.8.199:8000/play/a0a6/index.m3u8
 #EXTINF:-1 tvg-id="Onda15TV.es" tvg-logo="https://i.imgur.com/mUrZz9O.png" group-title="Noticias",Onda 15 TV
 https://cloudvideo.servers10.com:8081/8034/index.m3u8
 #EXTINF:-1 tvg-id="OndaValenciaTV.es" tvg-logo="https://i.imgur.com/6HxLUQd.png" group-title="Noticias",Onda Valencia TV
@@ -238,6 +236,10 @@ https://59d39900ebfb8.streamlock.net/untv-720/untv-720/playlist.m3u8
 https://amixtv.com:8081/unetvhn/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Unicanal.py" tvg-logo="https://i.imgur.com/cgTD2TW.png" group-title="Noticias",Unicanal
 http://45.170.130.224:8000/play/a04y/index.m3u8?hls
+#EXTINF:-1 tvg-id="Unifranz.bo" tvg-logo="https://unifranz.edu.bo/wp-content/themes/unifranz-web/public/images/logos/logo-light-min.442cee.svg" group-title="Noticias",Unifranz
+https://edge.enhdtv.com/8192/index.m3u8
+#EXTINF:-1 tvg-id="Unifranz.bo" tvg-logo="https://unifranz.edu.bo/wp-content/themes/unifranz-web/public/images/logos/logo-light-min.442cee.svg" group-title="Noticias",Unifranz
+https://live.enhdtv.com:8081/8192/index.m3u8
 #EXTINF:-1 tvg-id="VIVETV.ar" tvg-logo="https://raw.githubusercontent.com/vivetvargentina/vive-tv/main/Logo%20512x512-04.png" group-title="Noticias",VIVE TV
 https://vivo.solumedia.com:19360/vivetv/vivetv.m3u8
 #EXTINF:-1 tvg-id="VNP.pe" tvg-logo="https://i.imgur.com/TOnknEW.png" group-title="Noticias",VNP
@@ -318,11 +320,11 @@ https://content.uplynk.com/channel/26bd482ffe364a1282bc3df28bd3c21f.m3u8
 #EXTINF:-1 tvg-id="AmericasVoiceNews.us" tvg-logo="https://i.imgur.com/C4w0eYC.png" group-title="Noticias",America's Voice News
 https://jmp2.uk/plu-5e1f7da4bc7d740009831259.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" tvg-logo="https://i.imgur.com/kk2MdNC.png" group-title="Noticias",Arirang TV
+https://freem3u.xyz/api/live/play.m3u8?vid=111
+#EXTINF:-1 tvg-id="ArirangTV.kr" tvg-logo="https://i.imgur.com/kk2MdNC.png" group-title="Noticias",Arirang TV
 http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" tvg-logo="https://i.imgur.com/kk2MdNC.png" group-title="Noticias",Arirang TV
 http://45.162.64.114/ARIRANG/index.m3u8
-#EXTINF:-1 tvg-id="ArirangTV.kr" tvg-logo="https://i.imgur.com/kk2MdNC.png" group-title="Noticias",Arirang TV
-http://amdlive-ch02.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangUN.kr" tvg-logo="https://i.imgur.com/Jdy3WNm.png" group-title="Noticias",Arirang UN
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-logo="https://dtil.tmsimg.com/assets/s158142_ld_h15_aa.png?lock=720x540" group-title="Noticias",BBC News
@@ -353,6 +355,8 @@ https://blacknewschannel-vizio.amagi.tv/playlist.m3u8
 https://jmp2.uk/plu-5e46fba0c43b0d00096e5ac1.m3u8
 #EXTINF:-1 tvg-id="BTTV.in" tvg-logo="https://akm-img-a-in.tosshub.com/businesstoday/resource/img/best-bank-new.png" group-title="Noticias",BT TV
 https://feeds.intoday.in/bttv/itgd.m3u8
+#EXTINF:-1 tvg-id="BTBInfo.pl" tvg-logo="https://btb.j00r.us/img.php?id=87fa06e1418604cb096a0bb3f24e4371&type=Primary&w=400&t=BTB+Info" group-title="Noticias",BTB Info
+https://emisja2.btb.j00r.us/iptv/session/4/hls.m3u8
 #EXTINF:-1 tvg-id="CBCNewsNetwork.ca" tvg-logo="https://i.imgur.com/SjTdhvJ.png" group-title="Noticias",CBC News Network
 https://d2ny9lo79ujali.cloudfront.net/CBC_News_International.m3u8
 #EXTINF:-1 tvg-id="CBCNewsNetwork.ca" tvg-logo="https://i.imgur.com/SjTdhvJ.png" group-title="Noticias",CBC News Network
@@ -712,7 +716,7 @@ https://mblenmain01.telesur.ultrabase.net/mblivev3/hd/playlist.m3u8
 #EXTINF:-1 tvg-id="Telesur.ve" tvg-logo="https://i.imgur.com/P50VjRX.png" group-title="Noticias",Telesur
 https://mblesmain01.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8
 #EXTINF:-1 tvg-id="Telesur.ve" tvg-logo="https://i.imgur.com/P50VjRX.png" group-title="Noticias",Telesur
-http://181.78.211.244:8005/play/a0cc/index.m3u8
+https://mblenmain01.telesur.ultrabase.net/mblivev3/480p/playlist.m3u8
 #EXTINF:-1 tvg-id="TheFirstTV.us" tvg-logo="https://i.imgur.com/rOSlp93.png" group-title="Noticias",The First TV
 https://thefirst-oando.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TheFirstTV.us" tvg-logo="https://i.imgur.com/rOSlp93.png" group-title="Noticias",The First TV
