@@ -11,8 +11,6 @@ http://138.121.15.230:9002/AMC/index.m3u8
 https://stream-cdn-iad.vaughnsoft.net/play/live_a_neflix01.flv
 #EXTINF:-1 tvg-id="AuroraMediaFilms.gt" tvg-logo="https://i.imgur.com/DVC5w6H.png" group-title="Películas",Aurora Media Films
 https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
-#EXTINF:-1 tvg-id="AVIRewind.us" tvg-logo="https://zplay.cl/LogosV2/AVIREWINDS_NEW.png" group-title="Películas",AVI Rewind
-http://45.70.201.81:8000/play/a010/index.m3u8
 #EXTINF:-1 tvg-id="AXNLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Películas",AXN Latin America
 http://181.78.8.199:8000/play/a0cu/index.m3u8
 #EXTINF:-1 tvg-id="AXNLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Películas",AXN Latin America
@@ -67,12 +65,12 @@ http://23.237.104.106:8080/USA_MOREMAX/index.m3u8
 https://streaming.onnethn.com/CINEMAX/playlist.m3u8
 #EXTINF:-1 tvg-id="ClaroCinema.mx" tvg-logo="https://i.imgur.com/SOLGQxQ.jpg" group-title="Películas",Claro Cinema
 http://158.172.217.18:8000/play/a00d/index.m3u8
-#EXTINF:-1 tvg-id="ClaroCinema.mx" tvg-logo="https://i.imgur.com/SOLGQxQ.jpg" group-title="Películas",Claro Cinema
-http://45.171.64.30:6060/play/a039/index.m3u8
 #EXTINF:-1 tvg-id="CosmosTv.ar" tvg-logo="https://cdn4.fmcosmos.com/s4/2025/11/03/fmcosmos/images/15/92/159284_a18e887e336fef3bc6b188314a173ce10cbe5157966e839517e2b0428d7aed46/xs.webp" group-title="Películas",Cosmos Tv
 https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8
 #EXTINF:-1 tvg-id="CosmosTv.ar" tvg-logo="https://cdn4.fmcosmos.com/s4/2025/11/03/fmcosmos/images/15/92/159284_a18e887e336fef3bc6b188314a173ce10cbe5157966e839517e2b0428d7aed46/xs.webp" group-title="Películas",Cosmos Tv
 https://canaletaplus.com:3922/live/cosmoslive.m3u8
+#EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx" tvg-logo="https://i.imgur.com/aksM8pa.png" group-title="Películas",De Pelicula Latin America
+http://38.19.41.46:8081/DEPELICULA/index.m3u8
 #EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx" tvg-logo="https://i.imgur.com/aksM8pa.png" group-title="Películas",De Pelicula Latin America
 http://15.204.196.147:22880/RECEPCION-DPELICULA-LATAM-FHD/video.m3u8
 #EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx" tvg-logo="https://i.imgur.com/aksM8pa.png" group-title="Películas",De Pelicula Latin America
@@ -85,12 +83,12 @@ http://138.121.15.230:9002/DEPELICULA/index.m3u8
 http://15.204.246.24:8080/DHEHD/index.m3u8
 #EXTINF:-1 tvg-id="FilmArts.ar" tvg-logo="https://i.imgur.com/ukdmEKD.png" group-title="Películas",Film & Arts
 http://200.115.120.1:8000/play/ca131/index.m3u8
+#EXTINF:-1 tvg-id="FilmArts.ar" tvg-logo="https://i.imgur.com/ukdmEKD.png" group-title="Películas",Film & Arts
+http://45.228.234.9:8000/play/a06g/index.m3u8
 #EXTINF:-1 tvg-id="GoldenPremier.mx" tvg-logo="https://i.imgur.com/JMa7jws.png" group-title="Películas",Golden Premier
 http://200.57.28.141:8540/play/a0ln
 #EXTINF:-1 tvg-id="GoldenPremier2.mx" tvg-logo="https://i.imgur.com/GBlvQBI.png" group-title="Películas",Golden Premier 2
 http://200.57.28.141:8540/play/a0lo
-#EXTINF:-1 tvg-id="HBO2LatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png" group-title="Películas",HBO 2 Latin America
-http://45.171.64.30:6060/play/a00i/index.m3u8
 #EXTINF:-1 tvg-id="Maxcine.us" tvg-logo="https://gia.tv/streams/pptv/208138.png" group-title="Películas",Maxcine
 https://live20.bozztv.com/giatvplayout7/giatv-208138/playlist.m3u8
 #EXTINF:-1 tvg-id="Maxcine2.us" tvg-logo="https://gia.tv/streams/pptv/209163.png" group-title="Películas",Maxcine 2
@@ -117,6 +115,8 @@ http://168.196.127.137:6001/play/a08n/index.m3u8
 https://appletree-mytimespain-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="MyTimeMovieNetwork.mx" tvg-logo="https://i.imgur.com/pw4NZK1.png" group-title="Películas",MyTime Movie Network
 https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="NextHD.py" tvg-logo="https://i.imgur.com/c2rF3SS.png" group-title="Películas",Next HD
+https://live.enhdtv.com:19360/nexthd/nexthd.m3u8
 #EXTINF:-1 tvg-id="PlutoTVALaMexicana.us" tvg-logo="https://images.pluto.tv/channels/5dfcde52d28b09000a42d7a2/colorLogoPNG.png" group-title="Películas",Pluto TV A La Mexicana
 https://jmp2.uk/plu-5dfcde52d28b09000a42d7a2.m3u8
 #EXTINF:-1 tvg-id="PlutoTVCatastrofes.de" tvg-logo="https://images.pluto.tv/channels/645a309c5a0cd5000873f609/colorLogoPNG.png" group-title="Películas",Pluto TV Catastrofes
@@ -246,8 +246,6 @@ https://jmp2.uk/plu-58af4c093a41ca9d4ecabe96.m3u8
 https://jmp2.uk/plu-68c32d88f56983aba40052bd.m3u8
 #EXTINF:-1 tvg-id="BETVisionaries.us" tvg-logo="https://images.pluto.tv/channels/663946c1b18d700008d9c168/colorLogoPNG_1759338795452.png" group-title="Películas",BET Visionaries
 https://jmp2.uk/plu-663946c1b18d700008d9c168.m3u8
-#EXTINF:-1 tvg-id="Bonanza.us" tvg-logo="https://images.pluto.tv/channels/696e647b07ea70192d49f6a5/colorLogoPNG_1768842647658.png" group-title="Películas",Bonanza
-https://jmp2.uk/plu-696e647b07ea70192d49f6a5.m3u8
 #EXTINF:-1 tvg-id="Bonanza.us" tvg-logo="https://images.pluto.tv/channels/696e647b07ea70192d49f6a5/colorLogoPNG_1768842647658.png" group-title="Películas",Bonanza
 https://jmp2.uk/plu-68e9913c4a666b9054849832.m3u8
 #EXTINF:-1 tvg-id="Charge.us" tvg-logo="https://i.imgur.com/1rxmu2u.png" group-title="Películas",Charge!
@@ -393,6 +391,8 @@ https://aegis-cloudfront-1.tubi.video/27de4f2e-7f9c-418a-9b0d-e4b35b0843a0/playl
 https://jmp2.uk/plu-66c638726838ee00085ac20d.m3u8
 #EXTINF:-1 tvg-id="ParamountMovieChannel.us" tvg-logo="https://i.imgur.com/sj5h9bl.png" group-title="Películas",Paramount Movie Channel
 https://jmp2.uk/plu-5cb0cae7a461406ffe3f5213.m3u8
+#EXTINF:-1 tvg-id="ParamountNetwork.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png" group-title="Películas",Paramount Network
+http://23.237.104.106:8080/USA_PARAMOUNT_NETWORK/index.m3u8
 #EXTINF:-1 tvg-id="ParamountPlusPicks.us" tvg-logo="https://images.pluto.tv/channels/5ff8c708653d080007361b14/featuredImage.jpg" group-title="Películas",Paramount+ Picks
 https://jmp2.uk/plu-5ff8c708653d080007361b14.m3u8
 #EXTINF:-1 tvg-id="PlutoClassicMovieWesterns.us" tvg-logo="https://images.pluto.tv/channels/66dad50215d2c60008d7afbd/colorLogoPNG.png" group-title="Películas",Pluto Classic Movie Westerns
@@ -561,8 +561,20 @@ https://jmp2.uk/plu-6086d3f420fc8500075f8dbf.m3u8
 https://jmp2.uk/plu-62c5d80dc6de440007e033eb.m3u8
 #EXTINF:-1 tvg-id="Runtime.us" tvg-logo="https://i.imgur.com/2USCMvP.png" group-title="Películas",Runtime
 https://jmp2.uk/plu-62c5d32e2c48f9000715b6e9.m3u8
+#EXTINF:-1 tvg-id="SonyPix.in" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Películas",Sony Pix
+http://103.151.60.162:2122/play/a01d/index.m3u8?hls
 #EXTINF:-1 tvg-id="StarMovies.in" tvg-logo="https://dtil.tmsimg.com/assets/s143829_ld_h15_aa.png?lock=720x540" group-title="Películas",Star Movies
 http://103.151.60.162:2122/play/a02k/index.m3u8?hls
+#EXTINF:-1 tvg-id="StarTrekMovies.se" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Películas",Star Trek Movies
+https://jmp2.uk/plu-6400c281dff38e00083f59da.m3u8
+#EXTINF:-1 tvg-id="StarTrekMovies.se" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Películas",Star Trek Movies
+https://jmp2.uk/plu-6400c228498393000878a9b7.m3u8
+#EXTINF:-1 tvg-id="StarTrekMovies.se" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Películas",Star Trek Movies
+https://jmp2.uk/plu-6400c2a6cb41a40008dbe5bc.m3u8
+#EXTINF:-1 tvg-id="StarTrekDeepSpaceNine.us" tvg-logo="https://images.pluto.tv/channels/65c69bbfd77d450008c7ffee/colorLogoPNG_1758310416057.png" group-title="Películas",Star Trek: Deep Space Nine
+https://jmp2.uk/plu-65c69bbfd77d450008c7ffee.m3u8
+#EXTINF:-1 tvg-id="StarTrekTheNextGeneration.us" tvg-logo="https://images.pluto.tv/channels/695c32e61ca20bb8ca802eb9/colorLogoPNG_1768440087394.png" group-title="Películas",Star Trek: The Next Generation
+https://jmp2.uk/plu-695c32e61ca20bb8ca802eb9.m3u8
 #EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.se" tvg-logo="https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png" group-title="Películas",Star Trek: The Original Series
 https://jmp2.uk/plu-693add137e308621c051e733.m3u8
 #EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.se" tvg-logo="https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png" group-title="Películas",Star Trek: The Original Series

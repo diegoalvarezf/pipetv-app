@@ -27,10 +27,6 @@ https://live20.bozztv.com/giatv/giatv-KMKTV/KMKTV/chunks.m3u8
 https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8
 #EXTINF:-1 tvg-id="ChocolateFM.cl" tvg-logo="https://cdn.m3u.cl/logo/382_ChocolateFM.png" group-title="Música",Chocolate FM
 https://5eaccbab48461.streamlock.net:1936/8180/8180/playlist.m3u8
-#EXTINF:-1 tvg-id="ClaroMusicaTV.co" tvg-logo="https://i.imgur.com/vrSFUwv.png" group-title="Música",Claro Musica TV
-http://45.171.64.30:6060/play/a010
-#EXTINF:-1 tvg-id="ClaroMusicaTV.co" tvg-logo="https://i.imgur.com/vrSFUwv.png" group-title="Música",Claro Musica TV
-http://45.171.64.30:6060/play/a010/index.m3u8
 #EXTINF:-1 tvg-id="ConcertChannel.us" tvg-logo="https://i.imgur.com/u2irADf.png" group-title="Música",Concert Channel
 https://jmp2.uk/plu-6868152657543d1f8be4ece3.m3u8
 #EXTINF:-1 tvg-id="ConcertChannel.us" tvg-logo="https://i.imgur.com/u2irADf.png" group-title="Música",Concert Channel
@@ -70,7 +66,7 @@ https://live20.bozztv.com/akamaissh101/ssh101/gextvaccess/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://www.heinow.com.py/
 https://copacogen.desdeparaguay.net/heitv/heitv_py_alta/playlist.m3u8?admin=nacion
 #EXTINF:-1 tvg-id="HTV.us" tvg-logo="https://i.imgur.com/NlKFNHS.png" group-title="Música",HTV
-http://45.171.64.30:6060/play/a012/index.m3u8
+http://45.134.141.161:2200/ARG/HTV/index.m3u8
 #EXTINF:-1 tvg-id="HTV.us" tvg-logo="https://i.imgur.com/NlKFNHS.png" group-title="Música",HTV
 https://streaming.onnethn.com/HTV/playlist.m3u8
 #EXTINF:-1 tvg-id="InfinitaTV.ec" tvg-logo="https://i.imgur.com/1nHxdkR.png" group-title="Música",Infinita TV
@@ -127,6 +123,8 @@ https://eu1.servers10.com:8081/8214/index.m3u8
 https://video1.earthcam.com/myearthcam/075ff02f78c35af55564cf3af3b3f750.flv/playlist.m3u8
 #EXTINF:-1 tvg-id="MielTV.pe" tvg-logo="https://i.imgur.com/dPSFrCs.png" group-title="Música",Miel TV
 https://live-evg5.tv360.bitel.com.pe/bitel/mieltvSRT/playlist.m3u8
+#EXTINF:-1 tvg-id="Millenium109FM.pe" tvg-logo="https://i.imgur.com/sfNL6Bv.png" group-title="Música",Millenium 109 FM
+https://videoserver.tmcreativos.com:19360/nqvnhujhrx/nqvnhujhrx.m3u8
 #EXTINF:-1 tvg-id="MontonesTV.do" tvg-logo="https://montonestv.com/wp-content/uploads/2025/11/montones-logo.png" group-title="Música",Montones TV
 https://lbgo.bozztv.com/ssh101/ssh101/montonestv1/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVFlowLatino.us" tvg-logo="https://images.pluto.tv/channels/62b218fc511d4b00070ddc0c/colorLogoPNG.png" group-title="Música",MTV Flow Latino
@@ -137,6 +135,8 @@ https://jmp2.uk/plu-5d3609cd6a6c78d7672f2a81.m3u8
 http://190.128.214.97:64333/play/a06o/index.m3u8
 #EXTINF:-1 tvg-id="NandePortetepeTV.py" tvg-logo="https://i.imgur.com/3taT6JK.jpeg" group-title="Música",Nande Portetepe TV
 https://video.hostingcaaguazu.com:19360/nandeportetepe/nandeportetepe.m3u8
+#EXTINF:-1 tvg-id="NextHD.py" tvg-logo="https://i.imgur.com/c2rF3SS.png" group-title="Música",Next HD
+https://live.enhdtv.com:19360/nexthd/nexthd.m3u8
 #EXTINF:-1 tvg-id="Onda15TV.es" tvg-logo="https://i.imgur.com/mUrZz9O.png" group-title="Música",Onda 15 TV
 https://cloudvideo.servers10.com:8081/8034/index.m3u8
 #EXTINF:-1 tvg-id="OndaValenciaTV.es" tvg-logo="https://i.imgur.com/6HxLUQd.png" group-title="Música",Onda Valencia TV
@@ -155,8 +155,6 @@ https://streamlov.alsolnet.com/planet1009fm/live/playlist.m3u8
 http://158.172.155.130:8000/play/a00a/index.m3u8
 #EXTINF:-1 tvg-id="RadioBonita1067.ec" tvg-logo="https://i.imgur.com/IvZtqyz.png" group-title="Música",Radio Bonita 106.7
 https://cloudvideo.servers10.com:8081/8154/index.m3u8
-#EXTINF:-1 tvg-id="RadioChalaca.pe" tvg-logo="https://i.imgur.com/9A6DBG7.png" group-title="Música",Radio Chalaca
-https://servilive.com:3414/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="RadioClasicaTV.bo" tvg-logo="https://radioclasicapotosi.com/players/nexoplayer/assets/logo.png" group-title="Música",Radio Clasica TV
 https://ares.disfrutaenlared.com:1936/clasica/clasica/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioColmenar925FM.py" tvg-logo="https://i.imgur.com/LniNLO1.jpeg" group-title="Música",Radio Colmenar 92.5 FM
@@ -351,8 +349,6 @@ https://rjrfame-ioriver-cdn.encoders.immergo.tv/master.m3u8
 https://tv.mediacp.eu:8081/happyradio/index.m3u8
 #EXTINF:-1 tvg-id="HeartRadioAruba.aw" tvg-logo="https://i.imgur.com/MKZCskA.png" group-title="Música",Heart Radio Aruba
 https://live2.tensila.com/heart-v-1.heartar/hls/live/mystream.m3u8
-#EXTINF:-1 tvg-id="HMTV.ng" tvg-logo="https://watchhmtv.com/hmtv_logo.svg" group-title="Música",HMTV
-https://customer-yzxu6n447dx2x45h.cloudflarestream.com/f255a1e5ef17a8277e15e5f409951e98/manifest/video.m3u8
 #EXTINF:-1 tvg-id="HypeVisualRadio.nl" tvg-logo="https://cdn.onlineradiobox.com/img/fblogo/1/97371.v21.png" group-title="Música",Hype Visual Radio
 https://streammix.alsolnet.com/hyperadio/live/playlist.m3u8
 #EXTINF:-1 tvg-id="JalwaTV.pk" tvg-logo="https://i.imgur.com/HWb5Iat.png" group-title="Música",Jalwa TV
@@ -452,6 +448,8 @@ https://samsungau-qwestjazz-samsungtv-zw2jc.amagi.tv/playlist/samsungau-qwestjaz
 https://streamlov.alsolnet.com/radiofxnet/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ScorchTV.tt" tvg-logo="https://i.imgur.com/CNszwj1.png" group-title="Música",Scorch TV
 https://w6oy7x7jlxrg-hls-live.5centscdn.com/MandETV/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="SmartRadio.ro" tvg-logo="https://www.smartradio.ro/wp-content/themes/smart-radio/img/Logo_SmartRadio.png" group-title="Música",Smart Radio
+https://streamw.m.ro/Regie/radio.stream/chunklist.m3u8
 #EXTINF:-1 tvg-id="StingrayCityscapes.ca" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlXPCl4ze9lr2DnadYazKxuyyEEWmgO1O1Q&s" group-title="Música",Stingray Cityscapes
 https://aka-live1050.delivery.roku.com/7572d640-7373-4137-8b14-a3afff395349/t2-origin/out/v1/live.m3u8
 #EXTINF:-1 tvg-id="StingrayClassicRock.ca" tvg-logo="https://i.imgur.com/FBgu8yB.png" group-title="Música",Stingray Classic Rock

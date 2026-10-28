@@ -9,6 +9,8 @@ https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/perfiltv/livestream2/chunk
 https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8
 #EXTINF:-1 tvg-name="Net TV" tvg-logo="https://i.imgur.com/EWmshtx.png" tvg-id="NETTV.ar" tvg-chno="27.2" tvg-country="AR" group-title="Argentina",Net TV
 https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="El Trece" tvg-logo="https://i.imgur.com/ZK7AQFg.png" tvg-id="ElTrece.ar" tvg-chno="33.1" tvg-country="AR" group-title="Argentina",El Trece
+https://livetrx01.vodgc.net/eltrecetv/index.m3u8
 #EXTINF:-1 tvg-name="Telefe" tvg-logo="https://i.imgur.com/wrZfMXn.png" tvg-id="Telefe.ar" tvg-chno="34.1" tvg-country="AR" group-title="Argentina",Telefe
 http://45.134.141.161:2200/ARG/TELEFE_HD/index.m3u8
 #EXTINF:-1 tvg-name="América" tvg-logo="https://i.imgur.com/Jt7dOQm.png" tvg-id="AmericaTV.ar" tvg-chno="36.1" tvg-country="AR" group-title="Argentina",América
@@ -27,16 +29,20 @@ https://i.mjh.nz/.r/10peach-nsw.m3u8
 https://dce3793146fef017.mediapackage.us-west-2.amazonaws.com/out/v1/55cdf73af7894775ba6de8f57482b66a/CMAF_HLS/index.m3u8
 #EXTINF:-1 tvg-name="TVSN" tvg-logo="https://i.imgur.com/p3QCBOo.png" tvg-id="TVSN.au" tvg-chno="5" tvg-country="AU" group-title="Australia",TVSN
 https://tvsnhlslivetest.akamaized.net/hls/live/2034711/EXPO-MSL4/master.m3u8
+#EXTINF:-1 tvg-name="ABC Kids" tvg-logo="https://i.imgur.com/GWDRR1t.png" tvg-id="ABCKids.au" tvg-chno="3" tvg-country="AU" group-title="Australia",ABC Kids
+https://c.mjh.nz/abc-kids.m3u8
+#EXTINF:-1 tvg-name="ABC Me" tvg-logo="https://i.imgur.com/gBh54wY.png" tvg-id="ABCMe.au" tvg-chno="4" tvg-country="AU" group-title="Australia",ABC Me
+https://c.mjh.nz/abc-me.m3u8
 #EXTINF:-1 tvg-name="ABC News" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/ABC_News_Channel.svg/500px-ABC_News_Channel.svg.png" tvg-id="ABCNews.au" tvg-chno="5" tvg-country="AU" group-title="Australia",ABC News
 https://c.mjh.nz/abc-news.m3u8
+#EXTINF:-1 tvg-name="7two" tvg-logo="https://i.imgur.com/6pyIg02.png" tvg-id="7two.au" tvg-chno="5" tvg-country="AU" group-title="Australia",7two
+https://i.mjh.nz/.r/7two-syd.m3u8
 #EXTINF:-1 tvg-name="7mate" tvg-logo="https://i.imgur.com/zpr12HP.png" tvg-id="7mate.au" tvg-chno="5" tvg-country="AU" group-title="Australia",7mate
 https://i.mjh.nz/.r/7mate-syd.m3u8
 #EXTINF:-1 tvg-name="7flix" tvg-logo="https://i.imgur.com/6iIYCyC.png" tvg-id="7flix.au" tvg-chno="5" tvg-country="AU" group-title="Australia",7flix
 https://i.mjh.nz/.r/7flix-syd.m3u8
 #EXTINF:-1 tvg-name="C31 Melbourne" tvg-logo="https://i.imgur.com/dXwkFei.png" tvg-id="C31Melbourne.au" tvg-chno="5" tvg-country="AU" group-title="Australia",C31 Melbourne
 https://d1k6kax80wecy5.cloudfront.net/RLnAKY/index.m3u8
-#EXTINF:-1 tvg-name="Global News" tvg-logo="https://i.imgur.com/IpfmG93.png" tvg-chno="19" tvg-country="CA" group-title="Canada",Global News
-https://jmp2.uk/plu-62cbef9ebb857100072fc187.m3u8
 #EXTINF:-1 tvg-name="Global News Saskatoon" tvg-logo="https://i.imgur.com/IpfmG93.png" tvg-id="CFSKDT.ca" tvg-chno="27" tvg-country="CA" group-title="Canada",Global News Saskatoon
 https://jmp2.uk/plu-62cc00359cb58900088dc840.m3u8
 #EXTINF:-1 tvg-name="Global News Winnipeg" tvg-logo="https://i.imgur.com/IpfmG93.png" tvg-id="CKNDDT.ca" tvg-chno="29" tvg-country="CA" group-title="Canada",Global News Winnipeg
@@ -87,8 +93,6 @@ http://15.204.196.147:22880/MEGANOTICIA-MEGAMEDIA-EE.UU-PROVEEDOR/video.m3u8
 https://vid.canal1cr.com:3424/multi_live/play_720.m3u8
 #EXTINF:-1 tvg-name="Canal 8" tvg-logo="https://platform-static.cdn.mdstrm.com/player/logo/5efe501c21d05a0722152f6d.png" tvg-id="Canal8.cr" tvg-chno="8" tvg-country="CR" group-title="Costa Rica",Canal 8
 http://mdstrm.com/live-stream-playlist/5a7b1e63a8da282c34d65445.m3u8
-#EXTINF:-1 tvg-name="88 Stereo" tvg-logo="http://www.88stereo.com/wp-content/uploads/2017/05/88Stereo-logoweb.png" tvg-id="88stereo.cr" tvg-chno="88" tvg-country="CR" group-title="Costa Rica",88 Stereo
-http://k3.usastreams.com/CableLatino/88stereo/playlist.m3u8
 #EXTINF:-1 tvg-name="Canal RTVD 4" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4e/CERTV_4_2015.png" tvg-id="Canal4RD.do" tvg-chno="4" tvg-country="DO" group-title="Dominican Republic",Canal RTVD 4
 https://cdn.protvradiostream.com/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
 #EXTINF:-1 tvg-name="TG4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/TG4_logo.svg/960px-TG4_logo.svg.png" tvg-id="TG4.ie" tvg-chno="4" tvg-country="IE" group-title="Ireland",TG4
@@ -119,6 +123,8 @@ https://stream.ontvmx.com/ontv/ghxTYEQmKkB2UJyVuW/playlist.m3u8
 https://5ca9af4645e15.streamlock.net/mexicotravel/videomexicotravel/playlist.m3u8
 #EXTINF:-1 tvg-name="Estrella TV" tvg-logo="https://graph.facebook.com/EstrellaTV/picture?width=200&height=200" tvg-id="EstrellaTV.mx" tvg-chno="13" tvg-country="MX" group-title="Mexico",Estrella TV
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00567-estrellamedia-estrellatv-estrellamedia/playlist.m3u8
+#EXTINF:-1 tvg-name="TELE 10 Nayarit" tvg-logo="https://graph.facebook.com/Tele10Nayarit/picture?width=200&height=200" tvg-id="Tele10Nayarit.mx" tvg-chno="14" tvg-country="MX" group-title="Mexico",TELE 10 Nayarit
+https://live.iplanay.gob.mx/hls/nayarittv.m3u8
 #EXTINF:-1 tvg-name="Panamericana TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/26/Panamericana_tv_2009.png" tvg-id="PanamericanaTV.pe" tvg-chno="5" tvg-country="PE" group-title="Peru",Panamericana TV
 http://45.171.108.253:8888/PANAMERICANA/index.m3u8
 #EXTINF:-1 tvg-name="ATV+ Noticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f4/Atv_noticias_logo.png" tvg-id="ATVPlus.pe" tvg-chno="15" tvg-country="PE" group-title="Peru",ATV+ Noticias
@@ -261,16 +267,16 @@ https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
 https://lightning-now80s-samsunguk.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Now Rock" tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/89/NOW_Rock_logo.png" tvg-id="NowRock.uk" tvg-chno="363" tvg-country="GB" group-title="UK",Now Rock
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="BBC Radio 1" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd1-epg.png" tvg-id="BBCRadio1.uk" tvg-chno="1" tvg-country="GB" group-title="UK",BBC Radio 1
+https://lsn.lv/bbcradio.m3u8?station=bbc_radio_one&bitrate=320000
 #EXTINF:-1 tvg-name="BBC Radio 2" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd2-epg.png" tvg-id="BBCRadio2.uk" tvg-chno="2" tvg-country="GB" group-title="UK",BBC Radio 2
 https://lsn.lv/bbcradio.m3u8?station=bbc_radio_two&bitrate=320000
-#EXTINF:-1 tvg-name="BBC Radio 5 Live" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd5l-epg.png" tvg-id="BBCRadio5Live.uk" tvg-chno="5" tvg-country="GB" group-title="UK",BBC Radio 5 Live
-https://lsn.lv/bbcradio.m3u8?station=bbc_radio_five_live&bitrate=320000
-#EXTINF:-1 tvg-name="BBC Radio 6 Music" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd6-epg.png" tvg-id="BBCRadio6Music.uk" tvg-chno="6" tvg-country="GB" group-title="UK",BBC Radio 6 Music
-https://lsn.lv/bbcradio.m3u8?station=bbc_6music&bitrate=320000
-#EXTINF:-1 tvg-name="BBC Radio 1Xtra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd1x-epg.png" tvg-id="BBCRadio1Xtra.uk" tvg-chno="7" tvg-country="GB" group-title="UK",BBC Radio 1Xtra
-https://lsn.lv/bbcradio.m3u8?station=bbc_1xtra&bitrate=320000
+#EXTINF:-1 tvg-name="BBC Radio 4" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd4-epg.png" tvg-id="BBCRadio4FM.uk" tvg-chno="4" tvg-country="GB" group-title="UK",BBC Radio 4
+https://lsn.lv/bbcradio.m3u8?station=bbc_radio_fourfm&bitrate=320000
 #EXTINF:-1 tvg-name="BBC Radio 4 Extra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd4x-epg.png" tvg-id="BBCRadio4Extra.uk" tvg-chno="8" tvg-country="GB" group-title="UK",BBC Radio 4 Extra
 https://lsn.lv/bbcradio.m3u8?station=bbc_radio_four_extra&bitrate=320000
+#EXTINF:-1 tvg-name="BBC Radio 5 Sports Extra" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcrd5s-epg.png" tvg-id="BBCRadio5SportsExtra.uk" tvg-chno="9" tvg-country="GB" group-title="UK",BBC Radio 5 Sports Extra
+https://lsn.lv/bbcradio.m3u8?station=bbc_radio_five_live_sports_extra&bitrate=320000
 #EXTINF:-1 tvg-name="BBC Asian Network" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcasiannet-epg.png" tvg-id="BBCRadioAsianNetwork.uk" tvg-chno="10" tvg-country="GB" group-title="UK",BBC Asian Network
 https://lsn.lv/bbcradio.m3u8?station=bbc_asian_network&bitrate=320000
 #EXTINF:-1 tvg-name="BBC World Service" tvg-logo="https://experiencersinternational.github.io/tvsetup/tvg-ico/bbcws-epg.png" tvg-id="BBCRadioWorldService.uk" tvg-chno="11" tvg-country="GB" group-title="UK",BBC World Service
@@ -327,8 +333,6 @@ http://181.78.8.199:8000/play/a09j/index.m3u8
 http://181.78.8.199:8000/play/a09k/index.m3u8
 #EXTINF:-1 tvg-name="Vale TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/98/Logo_de_VALE_TV.png" tvg-id="ValeTV.ve" tvg-chno="7" tvg-country="VE" group-title="Venezuela",Vale TV
 https://59d39900ebfb8.streamlock.net/valetv_480/valetv_480/playlist.m3u8
-#EXTINF:-1 tvg-name="Telesur" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/82/TeleSUR.png" tvg-id="TeleSUR.ve" tvg-chno="8" tvg-country="VE" group-title="Venezuela",Telesur
-https://raw.githubusercontent.com/BellezaEmporium/IPTV_Exception/master/channels/ve/telesur.m3u8
 #EXTINF:-1 tvg-name="Latina TV" tvg-logo="https://intervenhosting.net/imagenes/latinatv.jpg" tvg-id="LatinaTV.ve" tvg-chno="10" tvg-country="VE" group-title="Venezuela",Latina TV
 https://streamtv.latinamedios.com:3413/live/latinatvlive.m3u8
 #EXTINF:-1 tvg-name="inter TV" tvg-logo="https://intervenhosting.net/imagenes/itv.jpg" tvg-id="interTV.ve" tvg-chno="11" tvg-country="VE" group-title="Venezuela",inter TV
