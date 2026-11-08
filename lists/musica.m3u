@@ -12,6 +12,8 @@ https://master.tucableip.com/audiokisstv/index.m3u8
 #EXTINF:-1 tvg-id="AzaharesRadiovisualMultimedia.ar" tvg-logo="https://i.imgur.com/g1BFoSs.png" group-title="Música",Azahares Radiovisual Multimedia
 https://streamyes.alsolnet.com/azaharesfm/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Bandamax.mx" tvg-logo="https://i.imgur.com/4DfnOTA.png" group-title="Música",Bandamax
+http://181.78.106.127:5000/play/ca064/index.m3u8
+#EXTINF:-1 tvg-id="Bandamax.mx" tvg-logo="https://i.imgur.com/4DfnOTA.png" group-title="Música",Bandamax
 https://streaming.onnethn.com/Bandamax/index.m3u8
 #EXTINF:-1 tvg-id="BeatsRadio.ar" tvg-logo="https://i.imgur.com/zkNUO5p.png" group-title="Música",Beats Radio
 https://videostream.shockmedia.com.ar:19360/beatsradio/beatsradio.m3u8
@@ -23,8 +25,6 @@ https://canal.mediaserver.com.co/live/buenisimatv.m3u8
 https://live20.bozztv.com/giatv/giatv-KMKTV/KMKTV/chunks.m3u8
 #EXTINF:-1 tvg-id="ChamameTV.ar" tvg-logo="https://i.imgur.com/JigzJck.png" group-title="Música",Chamame TV
 https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8
-#EXTINF:-1 tvg-id="ChocolateFM.cl" tvg-logo="https://cdn.m3u.cl/logo/382_ChocolateFM.png" group-title="Música",Chocolate FM
-https://5eaccbab48461.streamlock.net:1936/8180/8180/playlist.m3u8
 #EXTINF:-1 tvg-id="ClaroMusicaTV.co" tvg-logo="https://i.imgur.com/vrSFUwv.png" group-title="Música",Claro Musica TV
 http://45.171.64.30:6060/play/a010
 #EXTINF:-1 tvg-id="ClaroMusicaTV.co" tvg-logo="https://i.imgur.com/vrSFUwv.png" group-title="Música",Claro Musica TV
@@ -35,6 +35,8 @@ https://jmp2.uk/plu-6868152657543d1f8be4ece3.m3u8
 http://45.167.1.138:8000/play/a04i
 #EXTINF:-1 tvg-id="ConectaTV.mx" tvg-logo="https://i.imgur.com/qEk0QGa.png" group-title="Música",Conecta TV
 https://stream8.mexiserver.com:19360/conectatvx/conectatvx.m3u8
+#EXTINF:-1 tvg-id="CorazonTV.pa" tvg-logo="https://i.imgur.com/HVdbXku.png" group-title="Música",Corazon TV
+http://181.79.86.130:8000/play/a05d/index.m3u8
 #EXTINF:-1 tvg-id="CorazonTV.pa" tvg-logo="https://i.imgur.com/HVdbXku.png" group-title="Música",Corazon TV
 https://sistemastr.tropicalmoonmedia.com/live/7FFCFEC3978B68D1A2ED0A38DE96AF76/12.m3u8
 #EXTINF:-1 tvg-id="CumbiaMix.ar" tvg-logo="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6901dfd41a05195b77301d7b/b306e57e4_Logo-TV-C.png" group-title="Música",Cumbia Mix
@@ -201,8 +203,6 @@ http://158.172.217.18:8000/play/a01k/index.m3u8
 http://181.78.12.119:16123/play/ch15/index.m3u8
 #EXTINF:-1 tvg-id="RetromusicaTelevision.cl" tvg-logo="https://cdn.m3u.cl/logo/1765_Retromusica_Television.png" group-title="Música",Retromusica Television
 https://vdochile.com:3864/stream/play.m3u8
-#EXTINF:-1 tvg-id="RewindTV.cl" tvg-logo="https://i.imgur.com/OG0RC2e.png" group-title="Música",Rewind TV
-https://tls-cl.cdnz.cl/rewindtv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Reyali.co" tvg-logo="https://i.imgur.com/YmFjnsF.png" group-title="Música",Reyali
 https://eu1.servers10.com:8081/8090/index.m3u8
 #EXTINF:-1 tvg-id="RitoqueTV.cl" tvg-logo="https://i.imgur.com/nTVJcFA.png" group-title="Música",Ritoque TV
@@ -291,6 +291,8 @@ http://186.148.196.100:8000/play/a02z
 https://5eaccbab48461.streamlock.net:1936/8112/8112/playlist.m3u8
 #EXTINF:-1 tvg-id="VenusMedia.py" tvg-logo="https://i.imgur.com/XwmUbfp.png" group-title="Música",Venus Media
 https://tigocloud.desdeparaguay.net/venusmedia/venusmedia/playlist.m3u8
+#EXTINF:-1 tvg-id="VideoTourChannel.cr" tvg-logo="https://i.imgur.com/zEi8eMC.png" group-title="Música",Video Tour Channel
+https://59ef525c24caa.streamlock.net/videotour/videotour/playlist.m3u8
 #EXTINF:-1 tvg-id="VintageMusic.cr" tvg-logo="https://i.imgur.com/KImqYnN.jpeg" group-title="Música",Vintage Music
 https://59ef525c24caa.streamlock.net/vmtv/tvvintage/playlist.m3u8
 #EXTINF:-1 tvg-id="VisionTelevision.mx" tvg-logo="https://i.imgur.com/HV5tgcM.png" group-title="Música",Vision Television
