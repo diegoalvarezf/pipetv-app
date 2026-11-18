@@ -35,9 +35,9 @@ http://45.134.141.161:2200/ARG/DTV_SP2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ESPN2LatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png" group-title="Deportes",ESPN 2 Latin America
 http://190.61.47.54:8000/play/a005/index.m3u8
 #EXTINF:-1 tvg-id="ESPNLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" group-title="Deportes",ESPN Latin America
-http://190.61.47.54:8000/play/a004/index.m3u8
-#EXTINF:-1 tvg-id="ESPNLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" group-title="Deportes",ESPN Latin America
 http://181.78.211.244:8005/play/a08q/index.m3u8
+#EXTINF:-1 tvg-id="ESPNLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" group-title="Deportes",ESPN Latin America
+http://190.61.47.54:8000/play/a004/index.m3u8
 #EXTINF:-1 tvg-id="ESPNLatinAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" group-title="Deportes",ESPN Latin America
 http://168.228.44.241:9997/play/a06p/index.m3u8
 #EXTINF:-1 tvg-id="ESPNPremium.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png" group-title="Deportes",ESPN Premium
@@ -47,7 +47,7 @@ http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/116.m3u8
 #EXTINF:-1 tvg-id="ESPNPremium.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png" group-title="Deportes",ESPN Premium
 http://45.134.141.161:2200/ARG/ESPN_Premium_Argentina_HD/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Eurosport1.fr" tvg-logo="https://i.imgur.com/olQJgm7.png" group-title="Deportes",Eurosport 1
-http://85.117.37.43/eurosport1/index.m3u8
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/eurosport_1_en/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="Eurosport1.fr" tvg-logo="https://i.imgur.com/olQJgm7.png" group-title="Deportes",Eurosport 1
 http://45.134.141.161:2200/ARG/Eurosport_1_HD/index.m3u8
 #EXTINF:-1 tvg-id="Eurosport2.fr" tvg-logo="https://i.imgur.com/f56dHgR.png" group-title="Deportes",Eurosport 2
@@ -106,8 +106,6 @@ http://181.78.79.131:8000/play/a0mo
 #EXTINF:-1 tvg-id="TNTSports.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/83/TNT_Sports_%282023%29.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" group-title="Deportes",TNT Sports
 http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/86.m3u8
 #EXTINF:-1 tvg-id="TNTSports.cl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/83/TNT_Sports_%282023%29.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" group-title="Deportes",TNT Sports
-http://209.45.101.130:8040/play/a03s/index.m3u8
-#EXTINF:-1 tvg-id="TNTSports.cl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/83/TNT_Sports_%282023%29.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" group-title="Deportes",TNT Sports
 http://205.235.6.29:8000/play/a0xa/index.m3u8
 #EXTINF:-1 tvg-id="TNTSportsPremium.cl" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/TNT_Sports_Premium_%28Argentina%29.png/960px-TNT_Sports_Premium_%28Argentina%29.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="Deportes",TNT Sports Premium
 http://181.78.79.131:8000/play/a0q9
@@ -126,8 +124,6 @@ http://138.121.15.230:9002/WIN-SPORT/index.m3u8
 http://181.78.12.119:16123/play/ch18/index.m3u8
 #EXTINF:-1 tvg-id="WinPlusFutbol.co" tvg-logo="https://i.imgur.com/0UN87vB.png" group-title="Deportes",Win+ Futbol
 http://181.78.12.119:16123/play/ch19/index.m3u8
-#EXTINF:-1 tvg-id="WinPlusFutbol.co" tvg-logo="https://i.imgur.com/0UN87vB.png" group-title="Deportes",Win+ Futbol
-http://190.61.42.218:9000/play/a01s/index.m3u8
 #EXTINF:-1 tvg-id="30AGolfKingdom.us" tvg-logo="https://i.imgur.com/Lv53nh4.png" group-title="Deportes",30A Golf Kingdom
 https://30a-tv.com/feeds/vidaa/golf.m3u8
 #EXTINF:-1 tvg-id="ACCDigitalNetwork.us" tvg-logo="https://i.imgur.com/V6Kaqha.png" group-title="Deportes",ACC Digital Network
@@ -195,9 +191,6 @@ http://85.237.89.160:9590/usa-s/ESPN-2-HD/index.m3u8
 https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8
 #EXTINF:-1 tvg-id="ESPNU.us" tvg-logo="https://i.imgur.com/HiBrysh.png" group-title="Deportes",ESPNU
 http://85.237.89.160:9590/usa-s/ESPN-U-HD/index.m3u8
-#EXTINF:-1 tvg-id="Eurosport.fr" tvg-logo="https://i.imgur.com/s4jDnJh.png" group-title="Deportes",Eurosport
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://103.253.74.210:7070/stream/122/index.m3u8
 #EXTINF:-1 tvg-id="EurovisionSport.uk" tvg-logo="https://images.ctfassets.net/2b1dkanupt14/1A1Z8Gcn2NkbJRzTjxuj6h/2c14436cdc5b78e746a256e9f0c11a70/eurovision-icon.png" group-title="Deportes",Eurovision Sport
 https://amg26268-amg26268c34-amgplt0018.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg26268-amg26268c34-amgplt0018/playlist.m3u8
 #EXTINF:-1 tvg-id="FastFunBox.nl" tvg-logo="https://i.imgur.com/a9ZtP17.png" group-title="Deportes",Fast&FunBox
@@ -217,10 +210,10 @@ https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3
 #EXTINF:-1 tvg-id="FightNetwork.ca" tvg-logo="https://i.imgur.com/vlKPZHR.png" group-title="Deportes",Fight Network
 https://a-cdn.klowdtv.com/live2/fight_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="FightBox.nl" tvg-logo="https://i.imgur.com/mRsnztA.png" group-title="Deportes",FightBox
-https://nosignal1.antenaplay.ro/hls/fightbox-hd/index.m3u8
-#EXTINF:-1 tvg-id="FightBox.nl" tvg-logo="https://i.imgur.com/mRsnztA.png" group-title="Deportes",FightBox
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 https://webtvstream.bhtelecom.ba/fightbox.m3u8
+#EXTINF:-1 tvg-id="FightBox.nl" tvg-logo="https://i.imgur.com/mRsnztA.png" group-title="Deportes",FightBox
+https://nosignal1.antenaplay.ro/hls/fightbox-hd/index.m3u8
 #EXTINF:-1 tvg-id="FITE247.us" tvg-logo="https://i.imgur.com/ESV6qgH.png" group-title="Deportes",FITE 24/7
 https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8
 #EXTINF:-1 tvg-id="FITE247.us" tvg-logo="https://i.imgur.com/ESV6qgH.png" group-title="Deportes",FITE 24/7
@@ -283,9 +276,6 @@ https://jmp2.uk/plu-65c33fd4dc10a40008f26af8.m3u8
 https://jmp2.uk/plu-65c340383a116800078c8454.m3u8
 #EXTINF:-1 tvg-id="MUTV.uk" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1834.png" group-title="Deportes",MUTV
 https://fastly.live.brightcove.com/6374054671112/eu-west-1/6058004203001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiYXplMnp5LmVncmVzcy55ODN1ZWIiLCJhY2NvdW50X2lkIjoiNjA1ODAwNDIwMzAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU4MDA0MjAzMDAxIl0sImp0aSI6IjYzNzQwNTQ2NzExMTIifQ.3FmuTna3DAmY7xlhK5fk6LMrosrtrR5VsU2QOgYO5y4/playlist-hls.m3u8
-#EXTINF:-1 tvg-id="MUTV.uk" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1834.png" group-title="Deportes",MUTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://103.253.74.210:7070/stream/136/index.m3u8
 #EXTINF:-1 tvg-id="NauticalChannel.it" tvg-logo="https://i.imgur.com/2ByDyzL.png" group-title="Deportes",Nautical Channel
 https://a-cdn.klowdtv.com/live2/nautical_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="NauticalChannel.it" tvg-logo="https://i.imgur.com/2ByDyzL.png" group-title="Deportes",Nautical Channel

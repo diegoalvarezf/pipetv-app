@@ -12,27 +12,27 @@ https://liveingesta318.cdnmedia.tv/101weblive/smil:malaga.smil/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta318.cdnmedia.tv/101weblive/smil:sevilla.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="12tv.es" tvg-logo="https://i.imgur.com/VSTgXsh.png" group-title="España",12tv
-#EXTVLCOPT:http-referrer=https://player.streamingconnect.com/
-https://cloud.fastchannel.es/mic/manifiest/hls/12tv/12tv.m3u8
-#EXTINF:-1 tvg-id="12tv.es" tvg-logo="https://i.imgur.com/VSTgXsh.png" group-title="España",12tv
 #EXTVLCOPT:http-referrer=https://www.12tv.es/
 https://cloud.streamingconnect.tv/hls/12tv/12tv2.m3u8
+#EXTINF:-1 tvg-id="12tv.es" tvg-logo="https://i.imgur.com/VSTgXsh.png" group-title="España",12tv
+#EXTVLCOPT:http-referrer=https://player.streamingconnect.com/
+https://cloud.fastchannel.es/mic/manifiest/hls/12tv/12tv.m3u8
+#EXTINF:-1 tvg-id="24Horas.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas
+https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8
 #EXTINF:-1 tvg-id="24Horas.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas
 https://ztnr.rtve.es/ztnr/1694255.m3u8
 #EXTINF:-1 tvg-id="24Horas.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas
 https://n-5-2.eu.cdn-redge.media/livehls/oeu/mt/live/24h/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="24Horas.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas
-https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8
 #EXTINF:-1 tvg-id="24HorasCanarias.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas Canarias
 http://185.47.212.25:8080/24h_HD/index.m3u8
 #EXTINF:-1 tvg-id="24HorasCanarias.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas Canarias
-https://ztnr.rtve.es/ztnr/5473142.m3u8
-#EXTINF:-1 tvg-id="24HorasCanarias.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas Canarias
 https://rtvelivestream.rtve.es/rtvesec/can/24h_can_main_dvr.m3u8
-#EXTINF:-1 tvg-id="24HorasCatalunya.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas Catalunya
-https://ztnr.rtve.es/ztnr/4952053.m3u8
+#EXTINF:-1 tvg-id="24HorasCanarias.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas Canarias
+https://ztnr.rtve.es/ztnr/5473142.m3u8
 #EXTINF:-1 tvg-id="24HorasCatalunya.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas Catalunya
 https://rtvelivestream.rtve.es/rtvesec/cat/24h_cat_main_dvr.m3u8
+#EXTINF:-1 tvg-id="24HorasCatalunya.es" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="España",24 Horas Catalunya
+https://ztnr.rtve.es/ztnr/4952053.m3u8
 #EXTINF:-1 tvg-id="7TV.es" tvg-logo="https://i.imgur.com/rnzMR9R.png" group-title="España",7TV
 https://especial7tv.gestec-video.com/hls/regional.m3u8
 #EXTINF:-1 tvg-id="7TV.es" tvg-logo="https://i.imgur.com/rnzMR9R.png" group-title="España",7TV
@@ -348,9 +348,9 @@ http://103.172.29.30:9991/stream/channel/a23a4ab90fe7569ced31e455b752ab51
 #EXTINF:-1 tvg-id="TVEInternacionalEurope.es" tvg-logo="https://i.ibb.co/RpKLCMvp/tve.png" group-title="España",TVE Internacional Europe
 https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_1080.m3u8
 #EXTINF:-1 tvg-id="TVEInternacionalEurope.es" tvg-logo="https://i.ibb.co/RpKLCMvp/tve.png" group-title="España",TVE Internacional Europe
-https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_576.m3u8
-#EXTINF:-1 tvg-id="TVEInternacionalEurope.es" tvg-logo="https://i.ibb.co/RpKLCMvp/tve.png" group-title="España",TVE Internacional Europe
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tve/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="TVEInternacionalEurope.es" tvg-logo="https://i.ibb.co/RpKLCMvp/tve.png" group-title="España",TVE Internacional Europe
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_576.m3u8
 #EXTINF:-1 tvg-id="TVEStar.es" tvg-logo="https://i.ibb.co/j98NY8Mr/starcolor.png" group-title="España",TVE Star
 https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_1080.m3u8
 #EXTINF:-1 tvg-id="TVEStar.es" tvg-logo="https://i.ibb.co/j98NY8Mr/starcolor.png" group-title="España",TVE Star
