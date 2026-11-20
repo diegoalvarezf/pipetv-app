@@ -239,6 +239,8 @@ https://ignac16.github.io/voxel-tv-streams/neox.mpd
 https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/neox.mpd
 #EXTINF:-1 tvg-id="Nickelodeon.es" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="España",Nickelodeon
 http://90.170.214.40:9700/stream/avatel/nickelodeonhd/master.m3u8
+#EXTINF:-1 tvg-id="Nickelodeon.es" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="España",Nickelodeon
+http://90.170.214.40:9700/stream/avatel/nickelodeon/master.m3u8
 #EXTINF:-1 tvg-id="Nortevision.es" tvg-logo="https://i.imgur.com/C5SYw7B.png" group-title="España",Nortevision
 http://amaru.dyndns.org:8870/0.m3u8
 #EXTINF:-1 tvg-id="Nova.es" tvg-logo="https://i.imgur.com/Vx1F4o5.png" group-title="España",Nova
