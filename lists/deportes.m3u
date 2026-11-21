@@ -145,6 +145,8 @@ https://d4whmvwm0rdvi.cloudfront.net/10007/99951318/hls/master.m3u8?ads._fw_app_
 https://d4whmvwm0rdvi.cloudfront.net/10007/99993042/hls/master.m3u8?ads.afid=405342864&ads.asnw=169843&ads.channelId=99993042&ads.csid=lgchannels_us_nbcuamericanninjawarrior_ssai_cro&ads.sfid=19647852&ads.xumo_channelId=99993042&ads.xumo_contentId=4063&ads.xumo_contentName=NBCUAmericanNinjaWarrior&ads.xumo_providerId=4063&ads.xumo_providerName=NBCUAmericanNinjaWarrior
 #EXTINF:-1 tvg-id="AmericanNinjaWarrior.us" tvg-logo="https://raw.githubusercontent.com/RoqueDJ/iptv-svg/main/1792421696158.png" group-title="Deportes",American Ninja Warrior
 https://xumo-drct-ch812-n4996.fast.nbcuni.com/live/master.m3u8
+#EXTINF:-1 tvg-id="beINSportsUSA.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/BeIN_Sports_logo_%28vertical_version%29.svg" group-title="Deportes",beIN Sports USA
+https://tvsen6.aynaott.com/beinsports/index.m3u8
 #EXTINF:-1 tvg-id="beINSPORTSXTRA.us" tvg-logo="https://i.ibb.co/HT49GPmB/XTRA-2.png" group-title="Deportes",beIN SPORTS XTRA
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="beINSPORTSXTRA.us" tvg-logo="https://i.ibb.co/HT49GPmB/XTRA-2.png" group-title="Deportes",beIN SPORTS XTRA
@@ -293,10 +295,6 @@ https://a-cdn.klowdtv.com/live2/nautical_720p/playlist.m3u8
 https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
 #EXTINF:-1 tvg-id="NauticalChannel.it" tvg-logo="https://i.imgur.com/2ByDyzL.png" group-title="Deportes",Nautical Channel
 https://cdn78-at.azotosolutions.com/cdnedge39/Canale2/master.m3u8
-#EXTINF:-1 tvg-id="NBATV.us" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/960px-NBA_TV.svg.png" group-title="Deportes",NBA TV
-http://23.237.104.106:8080/USA_NBA/index.m3u8
-#EXTINF:-1 tvg-id="NBATV.us" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/960px-NBA_TV.svg.png" group-title="Deportes",NBA TV
-http://rezofoot.tv/NBATV/index.m3u8
 #EXTINF:-1 tvg-id="NBCSportsNOW.us" tvg-logo="https://i.imgur.com/EzNf2Yx.png" group-title="Deportes",NBC Sports NOW
 https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
 #EXTINF:-1 tvg-id="NBCSportsNOW.us" tvg-logo="https://i.imgur.com/EzNf2Yx.png" group-title="Deportes",NBC Sports NOW
@@ -401,6 +399,14 @@ https://636ffd31f0e12.streamlock.net/RacingStream1/RacingStream1/playlist.m3u8
 https://cdn.stmify.com/out/v1/SKY_SPORTS_F1/index.m3u8
 #EXTINF:-1 tvg-id="SlopesTV.us" tvg-logo="https://i.imgur.com/8bzAfgK.png" group-title="Deportes",Slopes TV
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2241
+#EXTINF:-1 tvg-id="SonySportsTen1.in" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" group-title="Deportes",Sony Sports Ten 1
+http://116.90.120.149:8000/play/a11t/index.m3u8
+#EXTINF:-1 tvg-id="SonySportsTen1.in" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" group-title="Deportes",Sony Sports Ten 1
+http://116.90.120.149:8000/play/a126/index.m3u8
+#EXTINF:-1 tvg-id="SonySportsTen2.in" tvg-logo="https://dtil.tmsimg.com/assets/s157592_ld_h15_aa.png?lock=720x540" group-title="Deportes",Sony Sports Ten 2
+http://116.90.120.149:8000/play/a137/index.m3u8
+#EXTINF:-1 tvg-id="SonySportsTen5.in" tvg-logo="https://dtil.tmsimg.com/assets/s157593_ld_h15_aa.png?lock=720x540" group-title="Deportes",Sony Sports Ten 5
+http://116.90.120.149:8000/play/a117/index.m3u8
 #EXTINF:-1 tvg-id="SportsGrid.us" tvg-logo="https://i.imgur.com/ulGKX30.png" group-title="Deportes",SportsGrid
 https://sportsgrid-tribal.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SportsGrid.us" tvg-logo="https://i.imgur.com/ulGKX30.png" group-title="Deportes",SportsGrid
@@ -411,6 +417,10 @@ https://sportsgrid-plex.amagi.tv/playlist.m3u8
 https://wurl120sports.global.transmit.live/hls/6865b0ce3b41686108809e5a/v1/stadium_gracenote/vizio_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="Stadium.us" tvg-logo="https://i.imgur.com/SnZOiER.png" group-title="Deportes",Stadium
 https://wurl120sports.global.transmit.live/hls/679a907dce42a042c23ace37/v1/stadium_gracenote/samsung_us/latest/main/hls/playlist.m3u8
+#EXTINF:-1 tvg-id="StarSports1.in" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" group-title="Deportes",Star Sports 1
+http://116.90.120.149:8000/play/a11x/index.m3u8
+#EXTINF:-1 tvg-id="StarSports2.in" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" group-title="Deportes",Star Sports 2
+http://116.90.120.149:8000/play/a120/index.m3u8
 #EXTINF:-1 tvg-id="Strongman.us" tvg-logo="https://i.imgur.com/bVQBF6R.png" group-title="Deportes",Strongman
 https://rightsboosterltd-scl-1-eu.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Strongman.us" tvg-logo="https://i.imgur.com/bVQBF6R.png" group-title="Deportes",Strongman
@@ -442,9 +452,9 @@ https://tvsen6.aynaott.com/talkSPORT/index.m3u8
 #EXTINF:-1 tvg-id="TennisChannel.us" tvg-logo="https://i.imgur.com/tsljAnY.png" group-title="Deportes",Tennis Channel
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
 #EXTINF:-1 tvg-id="TennisChannel.us" tvg-logo="https://i.imgur.com/tsljAnY.png" group-title="Deportes",Tennis Channel
-http://23.237.104.106:8080/USA_TENNIS/index.m3u8
-#EXTINF:-1 tvg-id="TennisChannel.us" tvg-logo="https://i.imgur.com/tsljAnY.png" group-title="Deportes",Tennis Channel
 http://138.59.177.78:9999/play/a0gl/index.m3u8
+#EXTINF:-1 tvg-id="TennisChannel.us" tvg-logo="https://i.imgur.com/tsljAnY.png" group-title="Deportes",Tennis Channel
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
 #EXTINF:-1 tvg-id="TennisChannel2.us" tvg-logo="https://image-resizer-cloud-cdn.api.cms.amdvids.com/image/7382296F-97F6-4450-B77B-8FE331FC04F6/3-1x1.png" group-title="Deportes",Tennis Channel 2
 https://mumbai-edge.smartplaytv.in/Tennis2/index.m3u8
 #EXTINF:-1 tvg-id="TennisChannel2.us" tvg-logo="https://image-resizer-cloud-cdn.api.cms.amdvids.com/image/7382296F-97F6-4450-B77B-8FE331FC04F6/3-1x1.png" group-title="Deportes",Tennis Channel 2
@@ -475,6 +485,10 @@ https://rpn.bozztv.com/gusa/gusa-tvswsn/index.m3u8
 https://d1t5afz6qed3xk.cloudfront.net/Unbeaten.m3u8
 #EXTINF:-1 tvg-id="Unbeaten.us" tvg-logo="https://i.imgur.com/LmkNt3v.png" group-title="Deportes",Unbeaten
 https://unbeaten-tcl.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Unite8Sports2.in" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00358PGT.png?lock=720x540" group-title="Deportes",Unite8 Sports 2
+http://116.90.120.149:8000/play/a129/index.m3u8
+#EXTINF:-1 tvg-id="Willow.us" tvg-logo="https://cricket.willow.tv/_nuxt/img/willow_blue_logo.362ed8e.png" group-title="Deportes",Willow
+https://tvsen5.aynaott.com/willowhd/index.m3u8
 #EXTINF:-1 tvg-id="WillowSports.us" tvg-logo="https://provider-static.plex.tv/epg/cms/production/acf3d1d8-c53e-49ca-86e9-0d9410b106b4/Willow_Sports_dark_Background_1500_1000_color.png" group-title="Deportes",Willow Sports
 https://d36r8jifhgsk5j.cloudfront.net/Willow_TV1080p.m3u8
 #EXTINF:-1 tvg-id="WillowSports.us" tvg-logo="https://provider-static.plex.tv/epg/cms/production/acf3d1d8-c53e-49ca-86e9-0d9410b106b4/Willow_Sports_dark_Background_1500_1000_color.png" group-title="Deportes",Willow Sports
