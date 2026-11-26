@@ -3,6 +3,18 @@
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta318.cdnmedia.tv/101weblive/smil:antequera.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="101tvCadiz.es" tvg-logo="https://i.imgur.com/GzI3RC4.png" group-title="España",101tv Cadiz
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
+https://liveingesta318.cdnmedia.tv/101weblive/smil:CADIZ.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="101tvMalaga.es" tvg-logo="https://i.imgur.com/GzI3RC4.png" group-title="España",101tv Malaga
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
+https://liveingesta318.cdnmedia.tv/101televisionlive/smil:malagaott.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="101tvSevilla.es" tvg-logo="https://i.imgur.com/GzI3RC4.png" group-title="España",101tv Sevilla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
+https://liveingesta318.cdnmedia.tv/101televisionlive/smil:sevillaott.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="12tv.es" tvg-logo="https://i.imgur.com/VSTgXsh.png" group-title="España",12tv
 #EXTVLCOPT:http-referrer=https://www.12tv.es/
 https://cloud.streamingconnect.tv/hls/12tv/12tv2.m3u8

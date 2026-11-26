@@ -71,10 +71,6 @@ https://streaming.onnethn.com/CINEMAX/playlist.m3u8
 http://45.171.64.30:6060/play/a039/index.m3u8
 #EXTINF:-1 tvg-id="ClaroCinema.mx" tvg-logo="https://i.imgur.com/SOLGQxQ.jpg" group-title="Películas",Claro Cinema
 http://158.172.217.18:8000/play/a00d/index.m3u8
-#EXTINF:-1 tvg-id="CosmosTv.ar" tvg-logo="https://cdn4.fmcosmos.com/s4/2025/11/03/fmcosmos/images/15/92/159284_a18e887e336fef3bc6b188314a173ce10cbe5157966e839517e2b0428d7aed46/xs.webp" group-title="Películas",Cosmos Tv
-https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8
-#EXTINF:-1 tvg-id="CosmosTv.ar" tvg-logo="https://cdn4.fmcosmos.com/s4/2025/11/03/fmcosmos/images/15/92/159284_a18e887e336fef3bc6b188314a173ce10cbe5157966e839517e2b0428d7aed46/xs.webp" group-title="Películas",Cosmos Tv
-https://canaletaplus.com:3922/live/cosmoslive.m3u8
 #EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx" tvg-logo="https://i.imgur.com/aksM8pa.png" group-title="Películas",De Pelicula Latin America
 http://15.204.196.147:22880/RECEPCION-DPELICULA-LATAM-FHD/video.m3u8
 #EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx" tvg-logo="https://i.imgur.com/aksM8pa.png" group-title="Películas",De Pelicula Latin America
@@ -91,6 +87,8 @@ http://15.204.246.24:8080/DHEHD/index.m3u8
 http://200.115.120.1:8000/play/ca131/index.m3u8
 #EXTINF:-1 tvg-id="FilmArts.ar" tvg-logo="https://i.imgur.com/ukdmEKD.png" group-title="Películas",Film & Arts
 http://45.228.234.9:8000/play/a06g/index.m3u8
+#EXTINF:-1 tvg-id="FMHMovies.us" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2024/12/24/23/1735058961578/eaf883fb926d_480_270.png" group-title="Películas",FMH Movies
+http://45.186.254.75:8000/play/a07j/index.m3u8
 #EXTINF:-1 tvg-id="GoldenPremier.mx" tvg-logo="https://i.imgur.com/JMa7jws.png" group-title="Películas",Golden Premier
 http://200.57.28.141:8540/play/a0ln
 #EXTINF:-1 tvg-id="GoldenPremier2.mx" tvg-logo="https://i.imgur.com/GBlvQBI.png" group-title="Películas",Golden Premier 2
@@ -192,6 +190,8 @@ http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/51.m3u8
 #EXTINF:-1 tvg-id="SundanceTV.es" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/SundanceTV_2014.svg/960px-SundanceTV_2014.svg.png" group-title="Películas",Sundance TV
 https://cdn.stmify.com/zapitv/stream/SUNDANCE_TV/sundance_hd.mpd
 #EXTINF:-1 tvg-id="WarnerChannel.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png" group-title="Películas",Warner Channel
+http://38.134.250.110:8000/play/a029/index.m3u8
+#EXTINF:-1 tvg-id="WarnerChannel.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png" group-title="Películas",Warner Channel
 http://181.78.197.59:8000/play/a07s/index.m3u8
 #EXTINF:-1 tvg-id="WarnerChannel.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png" group-title="Películas",Warner Channel
 http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/68.m3u8
@@ -234,6 +234,8 @@ http://107.167.7.162:8081/playlist/amhor/playlist.m3u8
 https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="ARTFLIXMovieClassics.us" tvg-logo="https://i.imgur.com/5pOZQB4.png" group-title="Películas",ARTFLIX Movie Classics
 https://amogonetworx-artflix-1-se.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AXNBlack.us" tvg-logo="https://i.imgur.com/Peo1QiZ.png" group-title="Películas",AXN Black
+http://141.94.193.53/axn_black/index.m3u8
 #EXTINF:-1 tvg-id="AXNBlack.us" tvg-logo="https://i.imgur.com/Peo1QiZ.png" group-title="Películas",AXN Black
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://88.212.15.50/live/test_black/playlist.m3u8
@@ -613,6 +615,8 @@ http://777905.live.tvstitch.com/playlist.m3u8?master=105&source=aHR0cDovLzE3Ni4x
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=http://live.tvstitch.com/
 http://777905.live.tvstitch.com/playlist.m3u8?master=249&source=aHR0cDovLzE3Ni4xMjIuMTAzLjI0MTo3MDAwL2NoNDQvdHJhY2tzLXYxYTEvbW9uby5tM3U4P2xpdmU9MSZpcD0xNzguMTM2LjQyLjIyMCZpZD05NDg4NjUmc2VjcmV0PW4xdTd1aTA2JnNzbD0xJjIxeW89MCZlPTE3OTA1OTk4Mzcmc3Q9UzRPS1VZemNocmREQWhnSTJkTDJ5QQ==
+#EXTINF:-1 tvg-id="WarnerTV.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warner2018LA.png/960px-Warner2018LA.png" group-title="Películas",Warner TV
+http://91.235.165.117:8001/play/a08h/index.m3u8
 #EXTINF:-1 tvg-id="WarnerTVAsia.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warner2018LA.png/960px-Warner2018LA.png" group-title="Películas",Warner TV Asia
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
 https://cdn4.skygo.mn/live/disk1/Warner/HLSv3-FTA/Warner.m3u8
